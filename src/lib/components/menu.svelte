@@ -81,10 +81,12 @@ let scrollPercentage = 0;
     <div class="navbar-start">
       <div class="bg-grey-300 dropdown poppins">
         <!-- svelte-ignore a11y-label-has-associated-control -->
+        <!-- svelte-ignore a11y-no-noninteractive-tabindex -->
         <label tabindex="0" class="btn btn-ghost btn-circle">
           <img src="/menu.png" alt="Menu" class="h-6 w-6"/>
         </label>
-        <ul tabindex="0" class="bg-white text-black menu menu-compact dropdown-content mt-3 p-2 shadow rounded-box w-52">
+        <!-- svelte-ignore a11y-no-noninteractive-tabindex -->
+        <ul tabindex="0" class="bg-white text-black menu menu-compact dropdown-content mt-3 p-2 shadow rounded-2xl w-52">
           <!-- svelte-ignore a11y-missing-attribute -->
           <li><a href="/">About</a></li>
           <!-- svelte-ignore a11y-missing-attribute -->
@@ -99,7 +101,7 @@ let scrollPercentage = 0;
       <!-- svelte-ignore a11y-missing-attribute -->
       <!-- <a href="/"><img width="60" src="/headerlogo.png" alt="Reload"></a> -->
       <!-- svelte-ignore a11y-missing-content -->
-      <a class="poppins text-black" href="/">Maverick White Reading Software
+      <a class="poppins rounded-full text-black" href="/">Maverick White Reading Software
       </a>
     </div>
     <div class="navbar-end">
@@ -150,13 +152,13 @@ let scrollPercentage = 0;
 
 <div>
   <button
-    class="bg-gray-100 text-black font-bold py-2 px-4 rounded timer-button"
+    class="bg-gray-100 text-black font-bold rounded-full poppins py-2 px-4 rounded timer-button"
     on:click={() => { if (!isRunning) startStopwatch(); else pauseStopwatch(); }}
   >
     {!isRunning ? 'Start' : 'Pause'}
   </button>
   <button
-    class="bg-gray-100 text-black font-bold py-2 px-5 rounded timer-button pr-10"
+    class="bg-gray-100 text-black rounded-full font-bold poppins py-2 px-5 rounded timer-button pr-10"
     on:click={resetStopwatch}
   >
     Reset
@@ -164,8 +166,8 @@ let scrollPercentage = 0;
 </div>
 
 
-<div class="pl-2 pr-1">
-  <div class="text-2xl font-medium text-center text-black p-3 rounded bg-gray-100">
+<div class="pr-1">
+  <div class="text-xl rounded-full font-medium text-center text-black p-3 rounded bg-gray-100">
     {timeElapsed}
   </div>
 </div>
@@ -181,7 +183,7 @@ let scrollPercentage = 0;
   <p class="poppins text-base pb-3">Progress:</p>
 </center> 
       
-<div class="progress-bar">
+<div class="progress-bar rounded-full">
   <div class="progress" style="width: {scrollPercentage}%;"></div>
 </div>
 
@@ -204,7 +206,9 @@ let scrollPercentage = 0;
    
 <div class="dropdown">
   <!-- svelte-ignore a11y-label-has-associated-control -->
+  <!-- svelte-ignore a11y-no-noninteractive-tabindex -->
   <label tabindex="0"><img src="/bookoptions.png" alt="Book Options" class="w-12 btn btn-ghost btn-circle"></label>
+  <!-- svelte-ignore a11y-no-noninteractive-tabindex -->
   <ul tabindex="0" class="bg-white text-black menu menu-compact dropdown-content mt-3 p-2 shadow rounded-box w-52">
     <!-- svelte-ignore a11y-missing-attribute -->
     <li><a class="poppins">Reading Mode</a></li>
@@ -217,6 +221,7 @@ let scrollPercentage = 0;
       
       <div class="divider divider-horizontal"></div> 
       
+      <!-- svelte-ignore a11y-no-noninteractive-tabindex -->
       <div tabindex="0" class="avatar w-12 btn btn-ghost btn-circle">
         <a href="/profile"><img src="/profile.png" alt="profile" class="rounded-full"/></a>
       </div>

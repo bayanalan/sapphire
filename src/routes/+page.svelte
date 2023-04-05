@@ -7,7 +7,7 @@
       <div class="w-full">
        <h1 class="poppins text-6xl pl-7 pb-6 font-bold">Welcome to Maverick White Reading Software</h1>
         <p class="poppins py-6 pb-8 pl-7 text-3xl">Welcome to Maverick White Reading Software, the ultimate destination for book lovers and avid readers everywhere. Whether you're a casual reader or an avid bibliophile, this software has something for everyone. </p>
-       <a class="btn btn-outline text-base poppins btn" href="/signup">Register Now!</a>
+       <a class="btn rounded-full btn-outline text-base poppins btn" href="/signup">Register Now!</a>
       </div>
     </div>
   </div>
@@ -26,7 +26,7 @@
       </p>
     
       <div>
-        <a class="poppins btn btn-outline" href="/library">Open Library</a>
+        <a class="poppins btn rounded-full btn-outline" href="/library">Open Library</a>
         </div>
     
     </div>
@@ -59,7 +59,7 @@
         <p class="py-6 pl-10 poppins text-2xl">And the best part? Maverick White Reading Software is more affordable than most other alternatives. With pricing starting at just $4 per month, $40 per year, or a one-time payment of $150, you can have access to an entire library of books.</p>
       
     <div class="pl-10">
-    <a class="poppins btn btn-outline" href="/pricing">See Pricing</a>
+    <a class="poppins btn rounded-full btn-outline" href="/pricing">See Pricing</a>
     </div>
 </div>
     </div>
@@ -80,7 +80,7 @@
         </p>
       
         <div class="pl-10 pb-6">
-        <a class="btn btn-outline text-base poppins btn" href="/signup">Register Now!</a>
+        <a class="btn btn-outline text-base rounded-full poppins btn" href="/signup">Register Now!</a>
         </div>
     
     </div>

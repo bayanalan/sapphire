@@ -15,7 +15,7 @@
 
 <center class="mt-10"><a href="/pricing" class="text-2xl poppins">Plan: $4/Month</a></center>
 
-<center class="mt-10"><a href="/signin" class="btn btn-outline text-white bg-red-500 text-2xl poppins">Sign Out</a></center>
+<center class="mt-10"><a href="/signin" class="rounded-full btn btn-outline text-white bg-red-500 text-2xl poppins">Sign Out</a></center>
   
 
  
