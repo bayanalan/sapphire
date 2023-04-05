@@ -101,7 +101,7 @@ let scrollPercentage = 0;
       <!-- svelte-ignore a11y-missing-attribute -->
       <!-- <a href="/"><img width="60" src="/headerlogo.png" alt="Reload"></a> -->
       <!-- svelte-ignore a11y-missing-content -->
-      <a class="poppins rounded-full text-black" href="/">Maverick White Reading Software
+      <a class="poppins rounded-full text-lg text-black" href="/">Maverick White Reading Software
       </a>
     </div>
     <div class="navbar-end">
