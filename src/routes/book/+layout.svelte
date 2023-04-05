@@ -1,6 +1,6 @@
 <script>
     import Divider from    "$lib/components/divider.svelte"
-    import Scroll from "$lib/components/savescroll.svelte"
+    import Scroll from "$lib/components/savescroll.svelte" 
 </script> 
 
 
