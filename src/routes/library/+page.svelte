@@ -1,3 +1,7 @@
+<script>
+  import base from "$app/paths"
+</script>
+
 <center>
 <div class="mt-8">
   <!-- svelte-ignore a11y-missing-attribute -->
@@ -22,13 +26,13 @@
 
 <div class="flex flex-wrap gap-4 mx-5">
   <div> 
-      <img src="/P+J+P1.png" width="225" class="mx-8 pt-1 mt-5" alt="Pickles and Jerimiah Part 1">
-      <a class="poppins btn btn-outline btn-sm mt-5 mx-20 hover:shadow-xl" href="/book/picklesandjerimiahpart1">Open Book</a>
+      <img src="{base}/P+J+P1.png" width="225" class="mx-8 pt-1 mt-5" alt="Pickles and Jerimiah Part 1">
+      <a class="poppins btn btn-outline btn-sm mt-5 mx-20 hover:shadow-xl" href="{base}/book/picklesandjerimiahpart1">Open Book</a>
     </div>
   
     <div>
-      <img src="/P+J+P2.png" width="225" class="mx-8 pt-1 mt-5" alt="Pickles and Jerimiah Part 2">
-      <a class="poppins btn btn-outline btn-sm mt-5 mx-20 hover:shadow-xl" href="/book/picklesandjerimiahpart2">Open Book</a>
+      <img src="{base}/P+J+P2.png" width="225" class="mx-8 pt-1 mt-5" alt="Pickles and Jerimiah Part 2">
+      <a class="poppins btn btn-outline btn-sm mt-5 mx-20 hover:shadow-xl" href="{base}/book/picklesandjerimiahpart2">Open Book</a>
     </div>
   
   </div>
@@ -48,8 +52,8 @@
 
       <div class="flex flex-wrap gap-4 mx-5">
         <div> 
-            <img src="/abalone1.png" width="225" class="mx-8 pt-1 mt-5" alt="Abalone in Heaven">
-            <a class="poppins btn btn-outline btn-sm mt-5 mx-20 hover:shadow-xl" href="/book/abaloneinheaven">Open Book</a>
+            <img src="{base}/abalone1.png" width="225" class="mx-8 pt-1 mt-5" alt="Abalone in Heaven">
+            <a class="poppins btn btn-outline btn-sm mt-5 mx-20 hover:shadow-xl" href="{base}/book/abaloneinheaven">Open Book</a>
           </div>
         </div>
   
@@ -68,8 +72,8 @@
       <div class="flex flex-wrap gap-4 mx-5">
       
       <div> 
-        <img src="/buzzthebee.png" width="225" class="mx-8 pt-1 mt-5" alt="Buzz the Bee">
-        <a class="poppins btn btn-outline btn-sm mt-5 mx-20 hover:shadow-xl" href="/book/buzzthebee">Open Book</a>
+        <img src="{base}/buzzthebee.png" width="225" class="mx-8 pt-1 mt-5" alt="Buzz the Bee">
+        <a class="poppins btn btn-outline btn-sm mt-5 mx-20 hover:shadow-xl" href="{base}/book/buzzthebee">Open Book</a>
       </div>
 
 
@@ -98,8 +102,8 @@
     
           <div class="flex flex-wrap gap-4 mx-5">
             <div> 
-                <img src="/findyourvoice.png" width="225" class="mx-8 pt-1 mt-5" alt="Finding Your Voice">
-                <a class="poppins btn btn-outline btn-sm mt-5 mx-20 hover:shadow-xl" href="/book/findingyourvoice">Open Book</a>
+                <img src="{base}/findyourvoice.png" width="225" class="mx-8 pt-1 mt-5" alt="Finding Your Voice">
+                <a class="poppins btn btn-outline btn-sm mt-5 mx-20 hover:shadow-xl" href="{base}/book/findingyourvoice">Open Book</a>
               </div>
             </div>
     
@@ -114,7 +118,7 @@
       
       <div class="flex flex-wrap gap-4 mx-5">
         <div> 
-            <img src="/nothere.png" width="300" class="mx-8 pt-1 mt-5" alt="Nothing Yet">
+            <img src="{base}/nothere.png" width="300" class="mx-8 pt-1 mt-5" alt="Nothing Yet">
           </div>
       </div>    
       
@@ -140,15 +144,15 @@
           </div>
           <div class="flex flex-wrap gap-4 mx-5">
             <div> 
-                <img src="/aliceinwonderland.png" width="225" class="mx-8 pt-1 mt-5" alt="Alice in Wonderland">
-                <a class="poppins btn btn-outline btn-sm mt-5 mx-20 hover:shadow-xl" href="/book/aliceinwonderland">Open Book</a>
+                <img src="{base}/aliceinwonderland.png" width="225" class="mx-8 pt-1 mt-5" alt="Alice in Wonderland">
+                <a class="poppins btn btn-outline btn-sm mt-5 mx-20 hover:shadow-xl" href="{base}/book/aliceinwonderland">Open Book</a>
               </div>
             
 
             <div class="flex flex-wrap gap-4 mx-5">
               <div> 
-                  <img src="/glass.png" width="225" class="mx-8 pt-1 mt-5" alt="Through the Looking Glass">
-                  <a class="poppins btn btn-outline btn-sm mt-9 mx-20 hover:shadow-xl" href="/book/throughthelookingglass">Open Book</a>
+                  <img src="{base}/glass.png" width="225" class="mx-8 pt-1 mt-5" alt="Through the Looking Glass">
+                  <a class="poppins btn btn-outline btn-sm mt-9 mx-20 hover:shadow-xl" href="{base}/book/throughthelookingglass">Open Book</a>
                 </div>
               </div>
         </div>
@@ -164,7 +168,7 @@
 
           <div class="flex flex-wrap gap-4 mx-5">
             <div> 
-                <img src="/nothere.png" width="300" class="mx-8 pt-1 mt-5" alt="Nothing Yet">
+                <img src="{base}/nothere.png" width="300" class="mx-8 pt-1 mt-5" alt="Nothing Yet">
               </div>
           </div>           
             
