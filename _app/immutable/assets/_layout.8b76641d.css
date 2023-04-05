@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
 
 
 /* Write your global styles here, in PostCSS syntax */
@@ -4629,7 +4629,7 @@ html{
 
 
 .poppins, h1, .prose p, .prose h1, .prose h2{ 
-   font-family: 'Poppins', sans-serif !important;
+   font-family: 'Raleway', sans-serif !important;
 }
 
 
