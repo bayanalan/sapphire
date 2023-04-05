@@ -16,10 +16,6 @@
       <form class="bg-white shadow-lg rounded-lg px-8 pt-6 pb-8 mb-4">
         <h1 class="text-2xl font-bold text-center mb-4">Sign Up</h1>
         <div class="mb-4">
-          <label class="block poppins text-gray-700 text-sm font-bold mb-2" for="username">
-            Username
-          </label>
-          <input class="poppins appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Enter username">
         </div>
         <div class="mb-4">
           <label class="poppins block poppins text-gray-700 text-sm font-bold mb-2" for="email">
