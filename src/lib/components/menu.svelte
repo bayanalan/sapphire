@@ -182,7 +182,7 @@ let scrollPercentage = 0;
 <center>
   <p class="poppins text-base pb-3">Progress:</p>
 </center> 
-      
+
 <div class="progress-bar rounded-full">
   <div class="progress" style="width: {scrollPercentage}%;"></div>
 </div>
