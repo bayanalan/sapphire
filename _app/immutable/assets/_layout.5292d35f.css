@@ -4639,8 +4639,14 @@ html{
 }
 
 
+.prose p {
+font-size:1.3em;
+
+}
+
+
 .prose {
-font-size:1.8em;
+font-size:1.81em;
 
 }
 
@@ -4744,4 +4750,3 @@ font-size:1.8em;
     display: none;
   }
 }
-
