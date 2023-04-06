@@ -77,7 +77,7 @@ let scrollPercentage = 0;
 
 {#if !isBook}
 
-<div class="navbar bg-white top-0 rounded-2xl sticky z-50">
+<div class="navbar bg-white top-0 rounded-full sticky z-50">
     <div class="navbar-start">
       <div class="bg-grey-300 dropdown poppins">
         <!-- svelte-ignore a11y-label-has-associated-control -->
@@ -123,7 +123,7 @@ let scrollPercentage = 0;
   }
 </style>
   
-  <div class="w-full top-0 mx-auto sticky z-50 p-5 rounded-2xl bg-white">
+  <div class="w-full top-0 mx-auto sticky z-50 p-5 rounded-full bg-white">
   <div class="flex items-center">
     <!-- svelte-ignore a11y-label-has-associated-control -->
        <div tabindex="0" class="btn btn-ghost btn-circle">
@@ -215,7 +215,7 @@ let scrollPercentage = 0;
     <!-- svelte-ignore a11y-missing-attribute -->
     <li><a class="poppins">Audiobook Mode</a></li>
     <!-- svelte-ignore a11y-missing-attribute -->
-    <li><a class="poppins">Immersive Mode</a></li>
+    <!-- <li><a class="poppins">Immersive Mode</a></li> -->
   </ul>
 </div>
       

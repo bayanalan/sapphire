@@ -1,4 +1,4 @@
- <footer class=" footer rounded-2xl items-center bg-white p-4 m-0 mt-40 text-neutral-content">
+ <footer class=" footer rounded-full items-center bg-white p-4 m-0 mt-40 text-neutral-content">
   
   <div class="items-center grid-flow-col">
     <!-- svelte-ignore a11y-missing-attribute -->
