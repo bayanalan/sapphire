@@ -159,7 +159,7 @@
             </a>
 
             <div class="flex flex-wrap gap-4 mx-5">
-              <a href="/book/throushthelookingglass">
+              <a href="/book/throughthelookingglass">
               <div> 
                   <img src="/glass.png" width="225" class="mx-8 pt-1 mt-5" alt="Through the Looking Glass">
                 </div>
