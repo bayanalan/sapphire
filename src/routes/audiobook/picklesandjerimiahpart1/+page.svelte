@@ -12,7 +12,7 @@
       <span id="play-btn-icon">▶</span>
       <span id="pause-btn-icon" class="hidden">❚❚</span>
     </button>
-    <audio id="audio-player" src="/P+J+P1audio.wav"></audio>
+    <audio id="audio-player" src="/P+J+P1audio.mp3"></audio>
   </div>
 </div>
 
@@ -22,7 +22,7 @@
   onMount(() => {
 
     const audio = new Howl({
-      src: ['/P+J+P1audio.wav'],
+      src: ['/P+J+P1audio.mp3'],
       html5: true
     });
 
