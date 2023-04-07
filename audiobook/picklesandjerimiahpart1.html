@@ -7,17 +7,17 @@ lang="en">
 		<link rel="icon" href="../favicon.png" />
 		<meta name="viewport" content="width=device-width" />
 		<meta http-equiv="content-security-policy" content="">
-		<link href="../_app/immutable/assets/_layout.7151feb6.css" rel="stylesheet">
-		<link rel="modulepreload" href="../_app/immutable/entry/start.da73790b.js">
+		<link href="../_app/immutable/assets/_layout.1435720c.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/entry/start.589c69c3.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/index.110dca19.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/singletons.d24b5384.js">
-		<link rel="modulepreload" href="../_app/immutable/entry/app.4547f5ab.js">
-		<link rel="modulepreload" href="../_app/immutable/entry/_layout.svelte.c52982c2.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/stores.a6c484c5.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/singletons.85fec30d.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/app.05db6e46.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/_layout.svelte.29fadb33.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/stores.f5316390.js">
 		<link rel="modulepreload" href="../_app/immutable/entry/_layout.js.984db11e.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/_layout.da46b06b.js">
 		<link rel="modulepreload" href="../_app/immutable/entry/audiobook-layout.svelte.94a84490.js">
-		<link rel="modulepreload" href="../_app/immutable/entry/audiobook-picklesandjerimiahpart1-page.svelte.md.d5b4c961.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/audiobook-picklesandjerimiahpart1-page.svelte.a0566ba9.js">
 	</head>
 	<body class="scrollbar-hide pt-0 mt-0"> 
 		<div>
@@ -88,7 +88,14 @@ lang="en">
 
 
  
-  <div class="prose prose-gray mx-auto mt-5"></div>
+  <div class="prose prose-gray mx-auto mt-5"><div class="bg-white shadow-lg rounded-lg px-8 pt-6 pb-8 mb-4"><div class="flex items-center mb-4"><img src="/P+J+P1.png" alt="Pickles and Jeremiah Cricket" class="w-16 mr-4">
+    <div><h2 class="text-xl poppins font-bold mb-2">Pickles and Jeremiah Cricket</h2>
+      <p class="mb-2 poppins ">Part 1: New York Times</p>
+      <p class="poppins">By Maverick White</p></div></div>
+  <div class="flex items-center"><button id="play-pause-btn" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"><span id="play-btn-icon">▶</span>
+      <span id="pause-btn-icon" class="hidden">❚❚</span></button>
+    <audio id="audio-player" src="/P+J+P1audio.mp3"></audio></div>
+</div></div>
 
   
 
@@ -112,7 +119,7 @@ lang="en">
 			
 			<script>
 				{
-					__sveltekit_13923xx = {
+					__sveltekit_122bu8j = {
 						env: {},
 						base: new URL("..", location).pathname.slice(0, -1),
 						element: document.currentScript.parentElement
@@ -121,10 +128,10 @@ lang="en">
 					const data = [null,null,null];
 
 					Promise.all([
-						import("../_app/immutable/entry/start.da73790b.js"),
-						import("../_app/immutable/entry/app.4547f5ab.js")
+						import("../_app/immutable/entry/start.589c69c3.js"),
+						import("../_app/immutable/entry/app.05db6e46.js")
 					]).then(([kit, app]) => {
-						kit.start(app, __sveltekit_13923xx.element, {
+						kit.start(app, __sveltekit_122bu8j.element, {
 							node_ids: [0, 2, 5],
 							data,
 							form: null,
