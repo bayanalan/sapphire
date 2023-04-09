@@ -1,5 +1,3 @@
- 
-
 <center>
 <div class="mt-8">
   <!-- svelte-ignore a11y-missing-attribute -->
@@ -181,4 +179,3 @@
                 <img src="/nothere.png" width="300" class="mx-8 pt-1 mt-5" alt="Nothing Yet">
               </div>
           </div>           
-            

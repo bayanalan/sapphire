@@ -6,7 +6,9 @@
     $: isAudiobook = $page.url.pathname.indexOf('audiobook/')>0
 
     import { onMount } from 'svelte';
-import { Howl } from 'howler';
+    import { Howl } from 'howler';
+
+    import supabase from '$lib/supabase.js'
 
 let intervalId;
 let minutes = 0;
@@ -61,18 +63,30 @@ onMount(() => {
 });
 
 let scrollPercentage = 0;
-  
-  onMount(() => {
-    window.addEventListener('scroll', updateScrollPercentage);
-    scrollPercentage = localStorage.getItem('scrollPercentage') || 0;
-  });
-  
-  function updateScrollPercentage() {
-    const scrollPosition = document.documentElement.scrollTop;
-    const pageHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    scrollPercentage = Math.floor(scrollPosition / pageHeight * 100);
-    localStorage.setItem('scrollPercentage', scrollPercentage);
-  }
+
+onMount(() => {
+  window.addEventListener('scroll', updateScrollPercentage);
+  scrollPercentage = localStorage.getItem('scrollPercentage') || 0;
+});
+
+function updateScrollPercentage() {
+  const scrollPosition = document.documentElement.scrollTop;
+  const pageHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  scrollPercentage = Math.floor(scrollPosition / pageHeight * 100);
+  localStorage.setItem('scrollPercentage', scrollPercentage);
+  updateScrubberBar();
+}
+
+function updateScrubberBar() {
+  const scrubber = document.getElementById('scrubber');
+  scrubber.value = scrollPercentage;
+}
+
+function onScrubberChange() {
+  const scrubber = document.getElementById('scrubber');
+  const scrollPosition = scrubber.value / 100 * (document.documentElement.scrollHeight - document.documentElement.clientHeight);
+  window.scrollTo(0, scrollPosition);
+}
  </script>
 
 {#if !isBook}

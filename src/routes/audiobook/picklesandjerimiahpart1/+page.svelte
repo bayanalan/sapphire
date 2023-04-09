@@ -21,7 +21,7 @@
 
 <script>
   import { onMount } from 'svelte';
-  
+
   onMount(() => {
 
     const audio = new Howl({
@@ -52,11 +52,16 @@
       if (audio.playing()) {
         audio.pause();
         audio.seek(0);
+       // audio.play();
+        playBtnIcon.classList.add('hidden');
+        pauseBtnIcon.classList.remove('hidden');
         playBtnIcon.classList.remove('hidden');
-        pauseBtnIcon.classList.add('hidden');
+        pauseBtnIcon.classList.add('hidden');      
       } else {
         audio.stop();
         audio.seek(0);
+        playBtnIcon.classList.remove('hidden');
+        pauseBtnIcon.classList.add('hidden');
       }
     });
 

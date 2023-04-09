@@ -39,24 +39,11 @@
           <input class="poppins appearance-none border rounded-full w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="password-confirm" type="password" placeholder="Confirm password">
         </div>
         <div class="pb-4">
-          <a class="ml-2 link link-hover poppins" href="/signin">Already have an account? Sign in</a>
+          <a class="ml-2 link link-hover poppins" href="/signin">Already have an account? Sign In</a>
         </div>
         <div class="mb-4">
           <!-- svelte-ignore a11y-missing-attribute -->
           <a class="w-full btn btn-outline poppins py-2 px-4 rounded-full">Sign Up</a>
-            <center>
-              <div class="pt-7">
-                <button class="btn btn-circle hover:bg-gray-200 btn-outline">
-                <img src="/google.png" alt="Sign In with Google">
-                </button>
-                <button class="btn btn-circle hover:bg-gray-200 btn-outline">
-                <img src="/microsoft.png" alt="Sign In with Microsoft">
-                </button>
-                <button class="btn btn-circle hover:bg-gray-200 btn-outline">
-                <img src="/apple.png" alt="Sign In with Apple">
-                </button>
-            </div>
-         </center> 
       </div>
       </form>
     </div>
