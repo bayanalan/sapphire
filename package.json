@@ -31,6 +31,7 @@
     "@supabase/auth-helpers-sveltekit": "^0.9.3",
     "@supabase/supabase-js": "^2.20.0",
     "howler": "^2.2.3",
+    "pip": "^0.0.1",
     "svelte-auth": "^0.0.0-0"
   }
 }

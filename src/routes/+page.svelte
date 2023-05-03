@@ -53,7 +53,29 @@
     <div class="hero h-full bg-base-200">
     <div class="hero-content flex-col lg:flex-row-reverse">
       <!-- svelte-ignore a11y-missing-attribute -->
-      <img src="/price.png" width="300" class="rounded-lg shadow-2xl" />
+      <div class="carousel w-full">
+        <div id="slide1" class="carousel-item relative w-full">
+          <img src="/submo.png" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide4" class="btn btn-circle">❮</a> 
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <div id="slide2" class="carousel-item relative w-full">
+          <img src="/subye.png" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" class="btn btn-circle">❮</a> 
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <div id="slide3" class="carousel-item relative w-full">
+          <img src="/subone" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide2" class="btn btn-circle">❮</a> 
+            <a href="#slide4" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+      </div>      
       <div>
         <h1 class="text-5xl pt-6 pl-10 font-bold poppins">Super Affordable</h1>
         <p class="py-6 pl-10 poppins text-2xl">And the best part? Maverick White Reading Software is more affordable than most other alternatives. With pricing starting at just $4 per month, $40 per year, or a one-time payment of $150, you can have access to an entire library of books.</p>

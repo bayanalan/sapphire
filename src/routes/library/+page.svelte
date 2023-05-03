@@ -24,19 +24,19 @@
   
   <a href="/book/picklesandjerimiahpart1">
   <div> 
-      <img src="/P+J+P1.png" width="225" class="mx-8 pt-1 mt-5" alt="Pickles and Jerimiah Part 1">
+      <img src="/P+J+P1.png" width="250" class="mx-8 pt-1 mt-5" alt="Pickles and Jerimiah Part 1">
     </div>
   </a>
   
   <a href="/book/picklesandjerimiahpart2">
     <div>
-      <img src="/P+J+P2.png" width="225" class="mx-8 pt-1 mt-5" alt="Pickles and Jerimiah Part 2">
+      <img src="/P+J+P2.png" width="250" class="mx-8 pt-1 mt-5" alt="Pickles and Jerimiah Part 2">
     </div>
   </a>
     
   <a href="/book/picklesandjerimiahpart3">
   <div>
-      <img src="/P+J+P3.png" width="225" class="mx-8 pt-1 mt-5" alt="Pickles and Jerimiah Part 3">
+      <img src="/P+J+P3.png" width="250" class="mx-8 pt-1 mt-5" alt="Pickles and Jerimiah Part 3">
     </div>
   </a>
   
@@ -59,7 +59,7 @@
         
         <a href="/book/abaloneinheaven">
         <div> 
-            <img src="/abalone1.png" width="225" class="mx-8 pt-1 mt-5" alt="Abalone in Heaven">
+            <img src="/abalone1.png" width="250" class="mx-8 pt-1 mt-5" alt="Abalone in Heaven">
           </div>
           <a>
         </div>
@@ -79,7 +79,7 @@
       
         <a href="/book/buzzthebee">
         <div> 
-        <img src="/buzzthebee.png" width="225" class="mx-8 pt-1 mt-5" alt="Buzz the Bee">
+        <img src="/buzzthebee.png" width="250" class="mx-8 pt-1 mt-5" alt="Buzz the Bee">
       </div>
 </a>
 
@@ -109,7 +109,7 @@
           <div class="flex flex-wrap gap-4 mx-5">
             <a href="/book/findingyourvoice">
             <div> 
-                <img src="/findyourvoice.png" width="225" class="mx-8 pt-1 mt-5" alt="Finding Your Voice">
+                <img src="/findyourvoice.png" width="250" class="mx-8 pt-1 mt-5" alt="Finding Your Voice">
               </div>
             </a>
             </div>
@@ -152,14 +152,14 @@
           <div class="flex flex-wrap gap-4 mx-5">
             <a href="/book/aliceinwonderland">
             <div> 
-                <img src="/aliceinwonderland.png" width="225" class="mx-8 pt-1 mt-5" alt="Alice in Wonderland">
+                <img src="/aliceinwonderland.png" width="250" class="mx-8 pt-1 mt-5" alt="Alice in Wonderland">
               </div>
             </a>
 
             <div class="flex flex-wrap gap-4 mx-5">
               <a href="/book/throughthelookingglass">
               <div> 
-                  <img src="/glass.png" width="225" class="mx-8 pt-1 mt-5" alt="Through the Looking Glass">
+                  <img src="/glass.png" width="250" class="mx-8 pt-1 mt-5" alt="Through the Looking Glass">
                 </div>
               </a>
               </div>
