@@ -1,81 +1,74 @@
 <!DOCTYPE html>
-<html class="pb-0 pt-2"
+<html class="pb-0 pt-2 w-full overflow-x-hidden max-w-screen"
 data-theme="autumn"
 lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" href="./favicon.png" />
-		<meta name="viewport" content="width=device-width" />
-		<meta http-equiv="content-security-policy" content="">
-		<link href="./_app/immutable/assets/_layout.261d2a2c.css" rel="stylesheet">
-		<link rel="modulepreload" href="./_app/immutable/entry/start.061e36d0.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/index.110dca19.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.b4464710.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/app.84d91817.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/_layout.svelte.18855205.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/stores.9a7658b8.js">
+<head>
+	<meta charset="utf-8" />
+	<link rel="icon" href="./favicon.png" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+	<meta http-equiv="content-security-policy" content="">
+		<link href="./_app/immutable/assets/_layout.8b428879.css" rel="stylesheet">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.f1c794b3.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.232fda3f.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.cb00b36c.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.416bbebe.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/preload-helper.41c905a7.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/_layout.svelte.ab9c4c86.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/stores.8aa2de2b.js">
 		<link rel="modulepreload" href="./_app/immutable/entry/_layout.js.984db11e.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/_layout.da46b06b.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/signin-page.svelte.85c55170.js">
-	</head>
-	<body class="scrollbar-hide pt-0 mt-0"> 
-		<div>
+		<link rel="modulepreload" href="./_app/immutable/entry/signin-page.svelte.4c18f412.js">
+</head>
+<style>
+	html, body {max-width:100%; overflow-x: hidden !important;}
+</style>
+<body class="scrollbar-hide pt-0 mt-0 w-full overflow-x-hidden max-w-screen"> 
+	<div>
 
 
-<div class="navbar bg-white top-0 rounded-full sticky z-50"><div class="navbar-start"><div class="bg-grey-300 dropdown poppins">
-        
-        <label tabindex="0" class="btn btn-ghost btn-circle"><img src="/menu.png" alt="Menu" class="h-6 w-6"></label>
-        
-        <ul tabindex="0" class="bg-white text-black menu menu-compact dropdown-content mt-3 p-2 shadow rounded-2xl w-52">
-          <li><a href="/">About</a></li>
-          
-          <li><a href="/library">Library</a></li>
-          
-         <li><a href="/pricing">Pricing</a></li></ul></div></div>
-    <div class="navbar-center">
+<div class="max-w-screen mx-auto overflow-hidden">
+<div class="fixed inset-x-0 top-0 z-50 bg-white"><div class="container mx-auto px-5 py-2"><nav class="flex justify-between overflow-x-auto">
+
+  
+    
+    <a class="text-2xl pb-1 poppins pt-2 mx-auto">Maverick White Reading Software
+    </a>
+
+
+
+  
       
-      
-      <a class="poppins rounded-full text-lg text-black" href="/">Maverick White Reading Software
-      </a></div>
-    <div class="navbar-end"><div tabindex="0" class="avatar w-12 btn ml-12 btn-ghost btn-circle"><a href="/profile"><img src="/profile.png" alt="profile" class="rounded-full"></a></div></div></div>
-
-
-
-
- 
-  <html lang="en"><head><meta charset="UTF-8">
+   
+</nav></div>
+</div>
+  <div class="h-20">  </div>
+   <html lang="en"><head><meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sign In</title>
   
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-  <style>/* Set body font to Poppins */
-    body {
-      font-family: 'Poppins', sans-serif;
-    }</style></head>
+  <link rel="stylesheet" href="https://unpkg.com/tailwindcss@0.25.0/dist/tailwind.min.css">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daisyui@1.14.4/dist/daisyui.min.css"></head>
 <body>
   <div class="flex justify-center items-center h-screen"><div class="w-full max-w-md">
-      <form class="bg-white shadow-lg rounded-lg px-8 pt-6 pb-8 mb-4"><h1 class="text-2xl font-bold text-center mb-4">Sign In</h1>
+      <form class="bg-white shadow-lg rounded-2xl px-8 pt-6 pb-8 mb-4"><h1 class="text-2xl font-bold text-center mb-4">Sign In</h1>
         <div class="mb-4"></div>
-        <div class="mb-4"><label class="block text-gray-700 text-sm font-bold mb-2" for="email">Email
-          </label>
-          <input class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Enter email"></div>
-        <div class="mb-4"><label class="block text-gray-700 text-sm font-bold mb-2" for="password">Password
-          </label>
-          <input class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="password" type="password" placeholder="Enter password"></div>
-        <div class="pb-4"><a class="link link-hover" href="/signup">Don&#39;t have an account? Sign Up</a></div>
-        <div class="mb-4"><button class="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">Sign In
-          </button>
-          <center><div class="pt-7"><button class="btn btn-square hover:bg-gray-200 btn-outline"><img src="/google.png" alt="Sign In with Google"></button>
-              <button class="btn btn-square hover:bg-gray-200 btn-outline"><img src="/microsoft.png" alt="Sign In with Microsoft"></button>
-              <button class="btn btn-square hover:bg-gray-200 btn-outline"><img src="/apple.png" alt="Sign In with Apple"></button></div></center></div></form></div></div></body></html>
-
-  
-
-
-
-
-
-<footer class="footer rounded-full items-center bg-white p-4 m-0 mt-40 text-neutral-content"><div class="items-center grid-flow-col">
+        <div class="mb-4">
+          <a class="ml-2 poppins block poppins text-gray-700 text-sm font-bold mb-2">Email
+          </a>
+          <input class="poppins appearance-none border rounded-full w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Enter email"></div>
+        <div class="mb-4">
+          <a class="ml-2 block poppins text-gray-700 text-sm font-bold mb-2">Password
+          </a>
+          <input class="poppins appearance-none border rounded-full w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="password" type="password" placeholder="Enter password"></div>
+        <div class="mb-4"></div>
+        <div class="pb-4"><a class="ml-2 link link-hover poppins" href="/setup/signup">Don&#39;t have an account? Sign Up</a></div>
+        <div class="mb-4">
+          <a class="w-full btn btn-outline poppins py-2 px-4 rounded-full">Sign In</a></div></form></div></div></body></html>
+   
+  <footer class="footer rounded-full items-center bg-white p-4 m-0 mt-40 text-neutral-content"><div class="items-center grid-flow-col">
     <img src="/blacklogo.png" width="125"> 
   
   <a class="poppins text-2xl text-black">Maverick White Reading 2023 Beta</a></div> 
@@ -85,13 +78,13 @@ lang="en">
   
     <a target="_blank" class="btn rounded-full poppins btn-outline" href="https://www.zazzle.com/store/maverick_merch/products">Merch</a>
   
-    <a target="_blank" class="btn rounded-full poppins btn-outline" href="https://donate.stripe.com/test_bIYcQI4aK1YGcHCaEJ">Donate</a></div></footer>
+    <a target="_blank" class="btn rounded-full poppins btn-outline" href="https://donate.stripe.com/test_bIYcQI4aK1YGcHCaEJ">Donate</a></div></footer></div>
 
 
 			
 			<script>
 				{
-					__sveltekit_1en0l7h = {
+					__sveltekit_10f0peb = {
 						env: {},
 						base: new URL(".", location).pathname.slice(0, -1),
 						element: document.currentScript.parentElement
@@ -100,11 +93,11 @@ lang="en">
 					const data = [null,null];
 
 					Promise.all([
-						import("./_app/immutable/entry/start.061e36d0.js"),
-						import("./_app/immutable/entry/app.84d91817.js")
+						import("./_app/immutable/entry/start.f1c794b3.js"),
+						import("./_app/immutable/entry/app.416bbebe.js")
 					]).then(([kit, app]) => {
-						kit.start(app, __sveltekit_1en0l7h.element, {
-							node_ids: [0, 23],
+						kit.start(app, __sveltekit_10f0peb.element, {
+							node_ids: [0, 27],
 							data,
 							form: null,
 							error: null
@@ -113,8 +106,9 @@ lang="en">
 				}
 			</script>
 		</div> 
-	</body>
+</body>
 </html>
+
 
 
 

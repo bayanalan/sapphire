@@ -1,94 +1,74 @@
 <!DOCTYPE html>
-<html class="pb-0 pt-2"
+<html class="pb-0 pt-2 w-full overflow-x-hidden max-w-screen"
 data-theme="autumn"
 lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" href="../favicon.png" />
-		<meta name="viewport" content="width=device-width" />
-		<meta http-equiv="content-security-policy" content="">
-		<link href="../_app/immutable/assets/_layout.261d2a2c.css" rel="stylesheet">
-		<link rel="modulepreload" href="../_app/immutable/entry/start.061e36d0.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/index.110dca19.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/singletons.b4464710.js">
-		<link rel="modulepreload" href="../_app/immutable/entry/app.84d91817.js">
-		<link rel="modulepreload" href="../_app/immutable/entry/_layout.svelte.18855205.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/stores.9a7658b8.js">
+<head>
+	<meta charset="utf-8" />
+	<link rel="icon" href="../favicon.png" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+	<meta http-equiv="content-security-policy" content="">
+		<link href="../_app/immutable/assets/_layout.8b428879.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/entry/start.f1c794b3.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index.232fda3f.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/singletons.cb00b36c.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/app.416bbebe.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/preload-helper.41c905a7.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/_layout.svelte.ab9c4c86.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/stores.8aa2de2b.js">
 		<link rel="modulepreload" href="../_app/immutable/entry/_layout.js.984db11e.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/_layout.da46b06b.js">
-		<link rel="modulepreload" href="../_app/immutable/entry/book-layout.svelte.d7596311.js">
-		<link rel="modulepreload" href="../_app/immutable/entry/book-throughthelookingglass-page.svelte.md.b33049f2.js">
-	</head>
-	<body class="scrollbar-hide pt-0 mt-0"> 
-		<div>
+		<link rel="modulepreload" href="../_app/immutable/entry/book-layout.svelte.e00b9905.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/savescroll.36a0bddb.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/book-throughthelookingglass-page.svelte.md.ba41ee51.js">
+</head>
+<style>
+	html, body {max-width:100%; overflow-x: hidden !important;}
+</style>
+<body class="scrollbar-hide pt-0 mt-0 w-full overflow-x-hidden max-w-screen"> 
+	<div>
 
 
+<div class="max-w-screen mx-auto overflow-hidden">
+<div class="fixed inset-x-0 top-0 z-50 bg-white"><div class="container mx-auto px-5 py-2"><nav class="flex justify-between overflow-x-auto">
+  <div class="flex items-center">
+       
+       <div tabindex="0" class="btn btn-ghost btn-circle"><a href="/library"><img src="/back.png" alt="back button" class="h-6 w-6"></a></div></div>
 
-
-<style>.timer-button {
-    height: 40px;
-    width: 80px;
-  }</style>
   
-  <div class="w-full top-0 mx-auto sticky z-50 p-5 rounded-full bg-white"><div class="flex items-center">
-       <div tabindex="0" class="btn btn-ghost btn-circle"><a href="/library"><img src="/back.png" alt="back button" class="h-6 w-6"></a></div>
 
-     <div class="bg-grey-300 dropdown poppins">
-      <label tabindex="0" class="btn btn-ghost btn-circle"><img src="/menu.png" alt="Menu" class="h-6 w-6"></label>
-      <ul tabindex="0" class="bg-white text-black menu menu-compact dropdown-content mt-3 p-2 shadow rounded-box w-52">
-        <li><a href="/">About</a></li>
-        
-        <li><a href="/library">Library</a></li>
-        
-       <li><a href="/pricing">Pricing</a></li></ul></div>
 
+
+  
    <div class="divider divider-horizontal"></div> 
-
-   <div class="flex items-center gap-2"><div><button class="bg-gray-100 text-black font-bold rounded-full poppins py-2 px-4 rounded timer-button">Start</button>
-  <button class="bg-gray-100 text-black rounded-full font-bold poppins py-2 px-5 rounded timer-button pr-10">Reset
-  </button></div>
-
-
-<div class="pr-1"><div class="text-xl rounded-full font-medium text-center text-black p-3 rounded bg-gray-100">0:00</div></div></div>
-
-      <div class="divider divider-horizontal"></div> 
-      
-<div class="w-48"><center><p class="poppins text-base pb-3">Progress:</p></center> 
-
-<div class="progress-bar rounded-full"><div class="progress" style="width: 0%;"></div></div>
-
-<style>.progress-bar {
-    width: 100%;
-    height: 8px;
-    background-color: #f0f0f0;
-  }
-  
-  .progress {
-    height: 100%;
-    background-color: #0ea5e9;
-  }</style></div>   
+   <div class="flex items-center gap-2"><div><button class="bg-gray-100 text-black font-bold rounded-full poppins py-2 px-4 rounded timer-button svelte-1vdmm9a">Start</button>
+        <button class="bg-gray-100 text-black rounded-full font-bold poppins py-2 px-5 rounded timer-button pr-10 svelte-1vdmm9a">Reset
+        </button></div>
+      <div class="pr-1"><div class="text-xl rounded-full font-medium text-center text-black p-3 rounded bg-gray-100">0:00</div></div></div>
+  <div class="divider divider-horizontal"></div> 
+  <div class="w-48"><center><p class="poppins text-base pb-3">Progress:</p></center> 
+    <div class="progress-bar rounded-full svelte-1vdmm9a"><div class="progress svelte-1vdmm9a" style="width: 0%;"></div></div></div>   
 
 <div class="divider divider-horizontal"></div> 
    
-<div class="dropdown">
-  
-  <label tabindex="0"><img src="/bookoptions.png" alt="Book Options" class="w-12 btn btn-ghost btn-circle"></label>
-  
-  <ul tabindex="0" class="bg-white text-black menu menu-compact dropdown-content mt-3 p-2 shadow rounded-box w-52">
+<script>function toggleDropdown(event) {
+    const dropdown = event.target.nextElementSibling;
+    dropdown.classList.toggle('hidden');
+  }
+</script>
+
+<div class="dropdown"><button class="btn btn-ghost btn-circle w-12" tabindex="0"><img src="/bookoptions.png" alt="Book Options"></button>
+  <ul class="menu menu-compact dropdown-content w-52 mt-3 p-2 rounded-box shadow-lg bg-white hidden">
     <li><a class="poppins">Reading Mode</a></li>
     
-    <li><a class="poppins">Audiobook Mode</a></li>
-    
-    </ul></div>
+    <li><a class="poppins">Audiobook Mode</a></li></ul></div>
       
-      <div class="divider divider-horizontal"></div> 
-      
-      
-      <div tabindex="0" class="avatar w-12 btn btn-ghost btn-circle"><a href="/profile"><img src="/profile.png" alt="profile" class="rounded-full"></a></div></div></div>
-
-
- 
-  
+   
+</nav></div>
+</div>
+  <div class="h-20">  </div>
+   
 
 <div class="prose prose-gray mx-auto mt-5">
 <h1>Through the Looking Glass</h1>
@@ -1334,14 +1314,8 @@ Life, what is it but a dream?</p>
 <ul class="menu menu-horizontal bg-base-100 rounded-box"><img></ul></div>
 
 <div class="divider text-2xl poppins mt-20 w-[calc(100%-100px)] mx-auto">End of Book</div>
-
-  
-
-
-
-
-
-<footer class="footer rounded-full items-center bg-white p-4 m-0 mt-40 text-neutral-content"><div class="items-center grid-flow-col">
+   
+  <footer class="footer rounded-full items-center bg-white p-4 m-0 mt-40 text-neutral-content"><div class="items-center grid-flow-col">
     <img src="/blacklogo.png" width="125"> 
   
   <a class="poppins text-2xl text-black">Maverick White Reading 2023 Beta</a></div> 
@@ -1351,13 +1325,13 @@ Life, what is it but a dream?</p>
   
     <a target="_blank" class="btn rounded-full poppins btn-outline" href="https://www.zazzle.com/store/maverick_merch/products">Merch</a>
   
-    <a target="_blank" class="btn rounded-full poppins btn-outline" href="https://donate.stripe.com/test_bIYcQI4aK1YGcHCaEJ">Donate</a></div></footer>
+    <a target="_blank" class="btn rounded-full poppins btn-outline" href="https://donate.stripe.com/test_bIYcQI4aK1YGcHCaEJ">Donate</a></div></footer></div>
 
 
 			
 			<script>
 				{
-					__sveltekit_1en0l7h = {
+					__sveltekit_10f0peb = {
 						env: {},
 						base: new URL("..", location).pathname.slice(0, -1),
 						element: document.currentScript.parentElement
@@ -1366,11 +1340,11 @@ Life, what is it but a dream?</p>
 					const data = [null,null,null];
 
 					Promise.all([
-						import("../_app/immutable/entry/start.061e36d0.js"),
-						import("../_app/immutable/entry/app.84d91817.js")
+						import("../_app/immutable/entry/start.f1c794b3.js"),
+						import("../_app/immutable/entry/app.416bbebe.js")
 					]).then(([kit, app]) => {
-						kit.start(app, __sveltekit_1en0l7h.element, {
-							node_ids: [0, 3, 19],
+						kit.start(app, __sveltekit_10f0peb.element, {
+							node_ids: [0, 3, 20],
 							data,
 							form: null,
 							error: null
@@ -1379,8 +1353,9 @@ Life, what is it but a dream?</p>
 				}
 			</script>
 		</div> 
-	</body>
+</body>
 </html>
+
 
 
 
