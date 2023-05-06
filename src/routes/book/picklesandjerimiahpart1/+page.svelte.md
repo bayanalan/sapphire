@@ -5,6 +5,8 @@ subtitle: "Part 1: New York Times"
 ---
 
 
+
+
 <!-- svelte-ignore a11y-missing-attribute -->
 # {title}
 ### {subtitle} 
@@ -240,4 +242,3 @@ As they made their way to the airport, they were filled with a mix of emotions. 
 As they boarded their flight, they made sure to take one final look at the city skyline, promising themselves that they would return one day. But as the plane took off, they realized that something was amiss. The flight attendant announced that they were headed to Phoenix, Arizona, not their home in the countryside. The two crickets looked at each other in shock, unsure of what to do.
 
 They spent the flight in a state of confusion, unsure of how they had ended up on the wrong flight. When they finally landed in Phoenix, they knew that they had to make the best of their unexpected detour. They hopped off the plane and set out to explore their new surroundings. They were in a completely new and unfamiliar place, but they were determined to make the most of it.
-

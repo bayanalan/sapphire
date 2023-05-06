@@ -35,7 +35,7 @@
           <!-- svelte-ignore a11y-missing-attribute -->
         </div>
         <div class="pb-4">
-          <a class="ml-2 link link-hover poppins" href="/signup">Don't have an account? Sign Up</a>
+          <a class="ml-2 link link-hover poppins" href="/setup/signup">Don't have an account? Sign Up</a>
         </div>
         <div class="mb-4">
           <!-- svelte-ignore a11y-missing-attribute -->

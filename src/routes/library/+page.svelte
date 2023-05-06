@@ -39,6 +39,12 @@
       <img src="/P+J+P3.png" width="250" class="mx-8 pt-1 mt-5" alt="Pickles and Jerimiah Part 3">
     </div>
   </a>
+
+  <a href="/book/picklesandjerimiahpart4">
+    <div> 
+        <img src="/P+J+P4.png" width="250" class="mx-8 pt-1 mt-5" alt="Pickles and Jerimiah Part 4">
+      </div>
+    </a>
   
 </div>
 

@@ -7,7 +7,7 @@
       <div class="w-full">
        <h1 class="poppins text-6xl pl-7 pb-6 font-bold">Welcome to Maverick White Reading Software</h1>
         <p class="poppins py-6 pb-8 pl-7 text-3xl">Welcome to Maverick White Reading Software, the ultimate destination for book lovers and avid readers everywhere. Whether you're a casual reader or an avid bibliophile, this software has something for everyone. </p>
-       <a class="btn rounded-full btn-outline text-base poppins btn" href="/signup">Register Now!</a>
+       <a class="btn rounded-full btn-outline text-base poppins btn" href="/setup/signup">Register Now!</a>
       </div>
     </div>
   </div>
@@ -16,7 +16,7 @@
   <div class="hero h-full bg-base-200">
   <div class="hero-content flex-col lg:flex-row-reverse">
     <!-- svelte-ignore a11y-missing-attribute -->
-    <img src="/OIP.jpeg" class="w-100 h-100 rounded-lg shadow-2xl" />
+    <img src="/OIP.png" class="rounded-lg shadow-2xl" alt="Books" width="570"/>
     <div>
       <h1 class="text-5xl pt-6 font-bold poppins">An Entire Library of Books, On One Device</h1>
       <p class="py-6 text-2xl pb-6 poppins">Maverick White Reading Software is the perfect solution for those who love to read but don't always have the time or convenience to visit a physical library. With this software, you can have access to an entire library of books at your fingertips, all in one place.
@@ -24,11 +24,6 @@
 <br>
         With a vast library of books, including titles like Pickles And Jerimiah, Abalone in Heaven, and many more, you're sure to find something that you'll love. Whether you're in the mood for a mystery, a romance, or something completely different, you'll find it here.
       </p>
-    
-      <div>
-        <a class="poppins btn rounded-full btn-outline" href="/library">Open Library</a>
-        </div>
-    
     </div>
   </div>
 </div>
@@ -38,7 +33,7 @@
     <div class="hero h-full bg-base-200">
     <div class="hero-content flex-col lg:flex-row">
       <!-- svelte-ignore a11y-missing-attribute -->
-      <img src="/home.png" width="700" class="rounded-lg shadow-2xl" />
+      <img src="/inter.png" width="700" class="rounded-lg shadow-2xl" />
       <div>
         <h1 class="text-5xl pt-6 poppins ml-14 font-bold">User-Friendly Interface</h1>
         <p class="py-6 pb-6 ml-14 poppins text-2xl">The software is user-friendly, with a clean and modern interface that makes reading a pleasure. The interface is designed to be simple, yet elegant, and the software is easy to navigate, so you can find exactly what you're looking for in no time.
@@ -53,36 +48,20 @@
     <div class="hero h-full bg-base-200">
     <div class="hero-content flex-col lg:flex-row-reverse">
       <!-- svelte-ignore a11y-missing-attribute -->
-      <div class="carousel w-full">
-        <div id="slide1" class="carousel-item relative w-full">
-          <img src="/submo.png" class="w-full" />
-          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide4" class="btn btn-circle">❮</a> 
-            <a href="#slide2" class="btn btn-circle">❯</a>
-          </div>
+      <div class="carousel shadow-2xl carousel-center max-w-md p-4 space-x-4 bg-neutral rounded-box">
+        <div class="carousel-item">
+          <img src="/submo.png" class="rounded-box" width="300"/>
         </div> 
-        <div id="slide2" class="carousel-item relative w-full">
-          <img src="/subye.png" class="w-full" />
-          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide1" class="btn btn-circle">❮</a> 
-            <a href="#slide3" class="btn btn-circle">❯</a>
-          </div>
+        <div class="carousel-item">
+          <img src="/subye.png" class="rounded-box" width="300"/>
         </div> 
-        <div id="slide3" class="carousel-item relative w-full">
-          <img src="/subone" class="w-full" />
-          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide2" class="btn btn-circle">❮</a> 
-            <a href="#slide4" class="btn btn-circle">❯</a>
-          </div>
+        <div class="carousel-item">
+          <img src="/subone.png" class="rounded-box" width="300"/>
         </div> 
-      </div>      
+      </div>
       <div>
         <h1 class="text-5xl pt-6 pl-10 font-bold poppins">Super Affordable</h1>
         <p class="py-6 pl-10 poppins text-2xl">And the best part? Maverick White Reading Software is more affordable than most other alternatives. With pricing starting at just $4 per month, $40 per year, or a one-time payment of $150, you can have access to an entire library of books.</p>
-      
-    <div class="pl-10">
-    <a class="poppins btn rounded-full btn-outline" href="/pricing">See Pricing</a>
-    </div>
 </div>
     </div>
   </div>
@@ -102,7 +81,7 @@
         </p>
       
         <div class="pl-10 pb-6">
-        <a class="btn btn-outline text-base rounded-full poppins btn" href="/signup">Register Now!</a>
+        <a class="btn btn-outline text-base rounded-full poppins btn" href="/setup/signup">Register Now!</a>
         </div>
     
     </div>

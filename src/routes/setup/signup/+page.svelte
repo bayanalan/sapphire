@@ -9,8 +9,20 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daisyui@1.14.4/dist/daisyui.min.css" />
 </head>
 <body>
+  <!-- Steps at the top of the page -->
+  <center class="pt-2">
+    <div>
+      <ul class="steps">
+        <li class="step step-primary" data-content="?">Register</li>
+        <li class="step" data-content="?">Choose Plan</li>
+        <li class="step" data-content="?">Profile</li>
+        <li class="step" data-content="?">Done!</li>
+      </ul>
+    </div>
+  </center>
+
   <!-- Center the sign-up form on the page -->
-  <div class="flex justify-center items-center h-screen">
+  <div class="flex justify-center pt-24 items-center">
     <div class="w-full max-w-md">
       <!-- Sign-up form using DaisyUI classes -->
       <form class="bg-white shadow-lg rounded-2xl px-8 pt-6 pb-8 mb-4">
@@ -43,10 +55,11 @@
         </div>
         <div class="mb-4">
           <!-- svelte-ignore a11y-missing-attribute -->
-          <a class="w-full btn btn-outline poppins py-2 px-4 rounded-full">Sign Up</a>
-      </div>
-      </form>
-    </div>
+<a class="w-full btn btn-outline poppins py-2 px-4 rounded-full" href="/setup/pricing">Sign Up</a>
+</div>
+</form>
+</div>
+
   </div>
 </body>
 </html>

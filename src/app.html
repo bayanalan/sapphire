@@ -1,18 +1,21 @@
 <!DOCTYPE html>
-<html class="pb-0 pt-2"
+<html class="pb-0 pt-2 w-full overflow-x-hidden max-w-screen"
 data-theme="autumn"
 lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="viewport" content="width=device-width" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-		%sveltekit.head%
-	</head>
-	<body class="scrollbar-hide pt-0 mt-0"> 
-		<div>%sveltekit.body%</div> 
-	</body>
+<head>
+	<meta charset="utf-8" />
+	<link rel="icon" href="%sveltekit.assets%/favicon.png" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+	%sveltekit.head%
+</head>
+<style>
+	html, body {max-width:100%; overflow-x: hidden !important;}
+</style>
+<body class="scrollbar-hide pt-0 mt-0 w-full overflow-x-hidden max-w-screen"> 
+	<div>%sveltekit.body%</div> 
+</body>
 </html>
 
 
