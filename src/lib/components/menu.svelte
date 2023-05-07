@@ -131,6 +131,7 @@
    <div class="divider divider-horizontal"></div> 
    <div class="flex items-center gap-2">
       <div>
+        <a class="poppins text-xl pr-4">Stopwatch:</a>
         <button
           class="bg-gray-100 text-black font-bold rounded-full poppins py-2 px-4 rounded timer-button"
           on:click={() => { if (!isRunning) startStopwatch(); else pauseStopwatch(); }}
@@ -160,26 +161,7 @@
     </div>
   </div>   
 
-<div class="divider divider-horizontal"></div> 
-   
-<script>
-  function toggleDropdown(event) {
-    const dropdown = event.target.nextElementSibling;
-    dropdown.classList.toggle('hidden');
-  }
-</script>
-
-<div class="dropdown">
-  <button class="btn btn-ghost btn-circle w-12" tabindex="0" on:click={toggleDropdown}>
-    <img src="/bookoptions.png" alt="Book Options">
-  </button>
-  <ul class="menu menu-compact dropdown-content w-52 mt-3 p-2 rounded-box shadow-lg bg-white hidden">
-    <!-- svelte-ignore a11y-missing-attribute -->
-    <li><a class="poppins">Reading Mode</a></li>
-    <!-- svelte-ignore a11y-missing-attribute -->
-    <li><a class="poppins">Audiobook Mode</a></li>
-  </ul>
-</div>
+<!-- <div class="divider divider-horizontal"></div>  -->
   
 {/if}
       

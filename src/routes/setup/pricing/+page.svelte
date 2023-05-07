@@ -24,5 +24,5 @@
 </div>
 
 <center class="mx-auto pt-24">
-    <a class="btn btn-outline rounded-full" href="/setup/profile">Next</a>
+    <a class="btn btn-outline poppins rounded-full" href="/setup/profile">Next</a>
     </center>
