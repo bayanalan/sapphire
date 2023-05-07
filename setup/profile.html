@@ -9,17 +9,17 @@ lang="en">
 	<meta name="viewport" content="width=device-width" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 	<meta http-equiv="content-security-policy" content="">
-		<link href="../_app/immutable/assets/_layout.8b428879.css" rel="stylesheet">
-		<link rel="modulepreload" href="../_app/immutable/entry/start.f1c794b3.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/index.232fda3f.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/singletons.cb00b36c.js">
-		<link rel="modulepreload" href="../_app/immutable/entry/app.416bbebe.js">
+		<link href="../_app/immutable/assets/_layout.66c7fa0f.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/entry/start.4cd9509b.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index.a6311b6a.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/singletons.983bf6cf.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/app.313b0f4e.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/preload-helper.41c905a7.js">
-		<link rel="modulepreload" href="../_app/immutable/entry/_layout.svelte.ab9c4c86.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/stores.8aa2de2b.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/_layout.svelte.9e74981b.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/stores.4cf4ef89.js">
 		<link rel="modulepreload" href="../_app/immutable/entry/_layout.js.984db11e.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/_layout.da46b06b.js">
-		<link rel="modulepreload" href="../_app/immutable/entry/setup-profile-page.svelte.d764e200.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/setup-profile-page.svelte.2300cc3c.js">
 </head>
 <style>
 	html, body {max-width:100%; overflow-x: hidden !important;}
@@ -49,66 +49,46 @@ lang="en">
       <li class="step step-primary" data-content="?">Profile</li>
       <li class="step" data-content="?">Done!</li></ul></div></center>
     
-    <html><head><link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-          <style>.hidden-ring {
-              border-color: transparent;
-            }</style></head>
-        <body class="flex flex-col items-center justify-start h-auto pt-10"><center class="pt-4 pb-6">
+    
+        
+          <center class="pt-4 pb-6">
             <a class="text-6xl poppins">Profile</a></center>
-          <div class="flex flex-col items-center"><div class="flex items-center mb-4"><input type="text" id="daisyInput" placeholder="Name" class="poppins text-center rounded-full px-4 py-2 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-200">
-              <button onclick="displayFirstLetters()" class="daisy-outline bg-black rounded-full btn-sm ml-2 px-4 text-white poppins">Submit</button></div>
-            <div class="ring-container flex items-center justify-center w-16 h-16 border-2 border-black rounded-full"><div class="text-xl font-bold" id="output"></div></div></div>
-        
-          <script>function displayFirstLetters() {
-              // Get the input value
-              const inputValue = document.getElementById('daisyInput').value.trim();
-              const outputElement = document.getElementById('output');
-              const ringContainer = document.querySelector('.ring-container');
-        
-              // If the input is empty, set the output to an empty string and hide the ring
-              if (inputValue === '') {
-                outputElement.innerText = '';
-                ringContainer.classList.add('hidden-ring');
-                return;
-              }
-        
-              // Split the input value into words
-              const words = inputValue.split(' ');
-        
-              // Extract the first letter of each word and convert to uppercase
-              const firstLetters = words.map(word => word.charAt(0).toUpperCase()).join('');
-        
-              // Display the result in the output element and show the ring
-              outputElement.innerText = firstLetters;
-              ringContainer.classList.remove('hidden-ring');
-            }
-        
-            // Listen for the "Enter" key press in the input field
-            document.getElementById('daisyInput').addEventListener('keydown', function(event) {
-              if (event.key === 'Enter') {
-                displayFirstLetters();
-              }
-            });
-          </script></body></html>            
-    <center class="mx-auto pt-24"><a class="btn btn-outline rounded-full" href="/setup/done">Next</a></center>
+
+          <div class="flex flex-col items-center"><div class="flex items-center mb-4"><input type="text" id="daisyInput" placeholder="Name Form" class="poppins text-center rounded-full px-4 py-2 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-200">
+              <button class="daisy-outline bg-black rounded-full btn-sm ml-2 px-4 text-white poppins">Submit</button></div>
+            <div class="ring-container flex items-center justify-center w-20 h-20 border-2 border-black rounded-full"><div class="text-xl poppins font-bold" id="output"></div></div>
+          <center class="mx-auto pt-2">
+            <a class="poppins text-base">Profile Picture</a></center></div>
+
+                    
+
+<center class="pt-16">
+  <a class="poppins text-3xl">Need Ideas? Ask our Name Generator!</a></center>
+
+ <center class="pt-12">
+    
+    <a class="btn btn-outline btn poppins rounded-full">Generate Name</a></center>
+
+                  
+                
+          <center class="mx-auto pt-36"><a class="btn btn-outline poppins rounded-full" href="/setup/done">Next</a></center>
    
   <footer class="footer rounded-full items-center bg-white p-4 m-0 mt-40 text-neutral-content"><div class="items-center grid-flow-col">
-    <img src="/blacklogo.png" width="125"> 
+    <img src="/blacklogo.png" width="120"> 
   
-  <a class="poppins text-2xl text-black">Maverick White Reading 2023 Beta</a></div> 
-  <div class="grid-flow-col gap-4 md:place-self-center md:justify-self-end"><a class="btn btn-outline rounded-full poppins text-black" target="_blank" href="https://www.youtube.com/channel/UCFX6Qz84JDNXvfCegXOq3aA">Youtube</a>
+  <a class="poppins text-xl text-black">Maverick White Reading 2023 Beta</a></div> 
+  <div class="grid-flow-col gap-4 md:place-self-center md:justify-self-end"><a target="_blank" href="https://www.youtube.com/channel/UCFX6Qz84JDNXvfCegXOq3aA"><img src="/youtube.svg" class="btn p-2 btn-square hover:bg-red-400 btn-outline" alt="Youtube" width="60"></a>
     
-    <a class="btn btn-outline rounded-full poppins text-black" target="_blank" href="mailto:maverick.white.books@gmail.com?subject=">Contact Us</a>
+    <a target="_blank" href="mailto:maverick.white.books@gmail.com?subject="><img src="/mail.png" class="py-3 p-2 btn hover:bg-purple-400 btn-square btn-outline" alt="Contact Us" width="60"></a>
   
-    <a target="_blank" class="btn rounded-full poppins btn-outline" href="https://www.zazzle.com/store/maverick_merch/products">Merch</a>
-  
-    <a target="_blank" class="btn rounded-full poppins btn-outline" href="https://donate.stripe.com/test_bIYcQI4aK1YGcHCaEJ">Donate</a></div></footer></div>
+    <a target="_blank" href="https://www.zazzle.com/store/maverick_merch/products"><img src="/merch.png" class="btn p-2 hover:bg-blue-400 btn-square btn-outline" alt="Merch" width="55"></a>
+  <div class="pr-10 pb-2"><a target="_blank" href="https://donate.stripe.com/test_bIYcQI4aK1YGcHCaEJ"><img src="/donate.png" class="btn p-2 hover:bg-green-300 btn-square btn-outline" alt="Donate" width="55"></a></div></div></footer></div>
 
 
 			
 			<script>
 				{
-					__sveltekit_10f0peb = {
+					__sveltekit_12l8la6 = {
 						env: {},
 						base: new URL("..", location).pathname.slice(0, -1),
 						element: document.currentScript.parentElement
@@ -117,11 +97,11 @@ lang="en">
 					const data = [null,null];
 
 					Promise.all([
-						import("../_app/immutable/entry/start.f1c794b3.js"),
-						import("../_app/immutable/entry/app.416bbebe.js")
+						import("../_app/immutable/entry/start.4cd9509b.js"),
+						import("../_app/immutable/entry/app.313b0f4e.js")
 					]).then(([kit, app]) => {
-						kit.start(app, __sveltekit_10f0peb.element, {
-							node_ids: [0, 25],
+						kit.start(app, __sveltekit_12l8la6.element, {
+							node_ids: [0, 27],
 							data,
 							form: null,
 							error: null

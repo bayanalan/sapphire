@@ -9,19 +9,19 @@ lang="en">
 	<meta name="viewport" content="width=device-width" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 	<meta http-equiv="content-security-policy" content="">
-		<link href="../_app/immutable/assets/_layout.8b428879.css" rel="stylesheet">
-		<link rel="modulepreload" href="../_app/immutable/entry/start.f1c794b3.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/index.232fda3f.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/singletons.cb00b36c.js">
-		<link rel="modulepreload" href="../_app/immutable/entry/app.416bbebe.js">
+		<link href="../_app/immutable/assets/_layout.66c7fa0f.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/entry/start.4cd9509b.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index.a6311b6a.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/singletons.983bf6cf.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/app.313b0f4e.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/preload-helper.41c905a7.js">
-		<link rel="modulepreload" href="../_app/immutable/entry/_layout.svelte.ab9c4c86.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/stores.8aa2de2b.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/_layout.svelte.9e74981b.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/stores.4cf4ef89.js">
 		<link rel="modulepreload" href="../_app/immutable/entry/_layout.js.984db11e.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/_layout.da46b06b.js">
-		<link rel="modulepreload" href="../_app/immutable/entry/book-layout.svelte.e00b9905.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/savescroll.36a0bddb.js">
-		<link rel="modulepreload" href="../_app/immutable/entry/book-abaloneinheaven-page.svelte.md.a45cdeba.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/book-layout.svelte.3d8694d9.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/savescroll.ee5a1ccf.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/book-abaloneinheaven-page.svelte.md.28278dc1.js">
 </head>
 <style>
 	html, body {max-width:100%; overflow-x: hidden !important;}
@@ -42,7 +42,8 @@ lang="en">
 
   
    <div class="divider divider-horizontal"></div> 
-   <div class="flex items-center gap-2"><div><button class="bg-gray-100 text-black font-bold rounded-full poppins py-2 px-4 rounded timer-button svelte-1vdmm9a">Start</button>
+   <div class="flex items-center gap-2"><div><a class="poppins text-xl pr-4">Stopwatch:</a>
+        <button class="bg-gray-100 text-black font-bold rounded-full poppins py-2 px-4 rounded timer-button svelte-1vdmm9a">Start</button>
         <button class="bg-gray-100 text-black rounded-full font-bold poppins py-2 px-5 rounded timer-button pr-10 svelte-1vdmm9a">Reset
         </button></div>
       <div class="pr-1"><div class="text-xl rounded-full font-medium text-center text-black p-3 rounded bg-gray-100">0:00</div></div></div>
@@ -50,19 +51,7 @@ lang="en">
   <div class="w-48"><center><p class="poppins text-base pb-3">Progress:</p></center> 
     <div class="progress-bar rounded-full svelte-1vdmm9a"><div class="progress svelte-1vdmm9a" style="width: 0%;"></div></div></div>   
 
-<div class="divider divider-horizontal"></div> 
-   
-<script>function toggleDropdown(event) {
-    const dropdown = event.target.nextElementSibling;
-    dropdown.classList.toggle('hidden');
-  }
-</script>
 
-<div class="dropdown"><button class="btn btn-ghost btn-circle w-12" tabindex="0"><img src="/bookoptions.png" alt="Book Options"></button>
-  <ul class="menu menu-compact dropdown-content w-52 mt-3 p-2 rounded-box shadow-lg bg-white hidden">
-    <li><a class="poppins">Reading Mode</a></li>
-    
-    <li><a class="poppins">Audiobook Mode</a></li></ul></div>
       
    
 </nav></div>
@@ -97,6 +86,7 @@ lang="en">
 <p>Abalone’s family knew that this was a difficult time, but they also knew that Abalone was not alone. They believed that he would soon be in heaven, reunited with loved ones who had passed on before him.</p>
 <p>With heavy hearts, they said their final goodbyes to Abalone. They knew that he would always be with them, in their hearts and memories. As they left the room, they knew that Abalone’s journey was just beginning, and that he would be forever in their thoughts and prayers.</p>
 <p>It was a somber moment, but there was also a sense of peace and acceptance. Abalone’s family knew that he was going to a better place, where he would no longer be in pain, and where he would be able to live free of any suffering. They were grateful for the time they had spent with him, and they knew that his spirit would always be with them.</p>
+<img src="/bookoptions.png">
 <h1>Chapter 2</h1>
 <h3>The Journey to Heaven</h3>
 <p>Abalone had said his final goodbyes to his family and was ready to embark on his journey to heaven. As he closed his eyes, he felt a sudden jolt, and he was transported to another realm. The journey had begun, and it was not going to be easy.</p>
@@ -204,22 +194,21 @@ lang="en">
 <div class="divider text-2xl poppins mt-20 w-[calc(100%-100px)] mx-auto">End of Book</div>
    
   <footer class="footer rounded-full items-center bg-white p-4 m-0 mt-40 text-neutral-content"><div class="items-center grid-flow-col">
-    <img src="/blacklogo.png" width="125"> 
+    <img src="/blacklogo.png" width="120"> 
   
-  <a class="poppins text-2xl text-black">Maverick White Reading 2023 Beta</a></div> 
-  <div class="grid-flow-col gap-4 md:place-self-center md:justify-self-end"><a class="btn btn-outline rounded-full poppins text-black" target="_blank" href="https://www.youtube.com/channel/UCFX6Qz84JDNXvfCegXOq3aA">Youtube</a>
+  <a class="poppins text-xl text-black">Maverick White Reading 2023 Beta</a></div> 
+  <div class="grid-flow-col gap-4 md:place-self-center md:justify-self-end"><a target="_blank" href="https://www.youtube.com/channel/UCFX6Qz84JDNXvfCegXOq3aA"><img src="/youtube.svg" class="btn p-2 btn-square hover:bg-red-400 btn-outline" alt="Youtube" width="60"></a>
     
-    <a class="btn btn-outline rounded-full poppins text-black" target="_blank" href="mailto:maverick.white.books@gmail.com?subject=">Contact Us</a>
+    <a target="_blank" href="mailto:maverick.white.books@gmail.com?subject="><img src="/mail.png" class="py-3 p-2 btn hover:bg-purple-400 btn-square btn-outline" alt="Contact Us" width="60"></a>
   
-    <a target="_blank" class="btn rounded-full poppins btn-outline" href="https://www.zazzle.com/store/maverick_merch/products">Merch</a>
-  
-    <a target="_blank" class="btn rounded-full poppins btn-outline" href="https://donate.stripe.com/test_bIYcQI4aK1YGcHCaEJ">Donate</a></div></footer></div>
+    <a target="_blank" href="https://www.zazzle.com/store/maverick_merch/products"><img src="/merch.png" class="btn p-2 hover:bg-blue-400 btn-square btn-outline" alt="Merch" width="55"></a>
+  <div class="pr-10 pb-2"><a target="_blank" href="https://donate.stripe.com/test_bIYcQI4aK1YGcHCaEJ"><img src="/donate.png" class="btn p-2 hover:bg-green-300 btn-square btn-outline" alt="Donate" width="55"></a></div></div></footer></div>
 
 
 			
 			<script>
 				{
-					__sveltekit_10f0peb = {
+					__sveltekit_12l8la6 = {
 						env: {},
 						base: new URL("..", location).pathname.slice(0, -1),
 						element: document.currentScript.parentElement
@@ -228,10 +217,10 @@ lang="en">
 					const data = [null,null,null];
 
 					Promise.all([
-						import("../_app/immutable/entry/start.f1c794b3.js"),
-						import("../_app/immutable/entry/app.416bbebe.js")
+						import("../_app/immutable/entry/start.4cd9509b.js"),
+						import("../_app/immutable/entry/app.313b0f4e.js")
 					]).then(([kit, app]) => {
-						kit.start(app, __sveltekit_10f0peb.element, {
+						kit.start(app, __sveltekit_12l8la6.element, {
 							node_ids: [0, 3, 10],
 							data,
 							form: null,
