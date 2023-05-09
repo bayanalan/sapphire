@@ -67,6 +67,7 @@
         <div> 
             <img src="/abalone1.png" width="250" class="mx-8 pt-1 mt-5" alt="Abalone in Heaven">
           </div>
+          <!-- svelte-ignore a11y-missing-attribute -->
           <a>
         </div>
 <div class="flex flex-wrap gap-4 mx-5">

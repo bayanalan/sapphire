@@ -5,11 +5,13 @@
   var isAbout
   var isSetup
   var isSignin
+  var isSignup
   $: isBook = $page.url.pathname.indexOf('book/')>0
   $: isAudiobook = $page.url.pathname.indexOf('audiobook/')>0
   $: isAbout = $page.url.pathname == '/'
   $: isSignin = $page.url.pathname == '/signin'
   $: isLibrary = $page.url.pathname == '/library'
+  $: isSignup = $page.url.pathname == '/setup/signup'
   $: isSetup = $page.url.pathname.indexOf('setup/')>0
 
   import { onMount } from 'svelte';
@@ -118,6 +120,15 @@
   </div></div>
   {/if}
 
+  {#if isSignup}   <!-- back to library  -->
+  <div class="flex items-center">
+    <!-- svelte-ignore a11y-label-has-associated-control -->
+       <!-- svelte-ignore a11y-no-noninteractive-tabindex -->
+       <div tabindex="0" class="btn btn-ghost btn-circle">
+        <a href="/"><img src="/back.png" alt="back button" class="h-6 w-6"/></a>
+  </div></div>
+  {/if}
+
   {#if !isBook}  <!-- title, does not show up in books  -->
     <!-- svelte-ignore a11y-missing-attribute -->
     <a class="text-2xl pb-1 poppins pt-2 mx-auto">
@@ -131,6 +142,7 @@
    <div class="divider divider-horizontal"></div> 
    <div class="flex items-center gap-2">
       <div>
+        <!-- svelte-ignore a11y-missing-attribute -->
         <a class="poppins text-xl pr-4">Stopwatch:</a>
         <button
           class="bg-gray-100 text-black font-bold rounded-full poppins py-2 px-4 rounded timer-button"

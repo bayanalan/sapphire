@@ -2,10 +2,10 @@
 <center>
     <div class="pt-2">
       <ul class="steps">
-      <li class="step step-primary">Register</li>
-      <li class="step step-primary" data-content="?">Choose Plan</li>
-      <li class="step" data-content="?">Profile</li>
-      <li class="step" data-content="?">Done!</li>
+      <li class="step step-primary poppins">Register</li>
+      <li class="step step-primary poppins" data-content="?">Choose Plan</li>
+      <li class="step poppins" data-content="?">Profile</li>
+      <li class="step poppins" data-content="?">Done!</li>
     </ul>
     </div>
     </center>
