@@ -56,8 +56,6 @@ With heavy hearts, they said their final goodbyes to Abalone. They knew that he 
 
 It was a somber moment, but there was also a sense of peace and acceptance. Abalone's family knew that he was going to a better place, where he would no longer be in pain, and where he would be able to live free of any suffering. They were grateful for the time they had spent with him, and they knew that his spirit would always be with them.
 
-<img src="/bookoptions.png">
-
 # Chapter 2
 ### The Journey to Heaven
 

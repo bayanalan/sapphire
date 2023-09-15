@@ -1,10 +1,10 @@
- <footer class=" footer rounded-full items-center bg-white p-4 m-0 mt-40 text-neutral-content">
+ <footer class=" footer items-center bg-white px-3 m-0 mt-60 text-neutral-content">
   
   <div class="items-center grid-flow-col">
     <!-- svelte-ignore a11y-missing-attribute -->
-    <img src="/blacklogo.png" width="120"/> 
+    <img src="/blacklogo.png" width="115"/> 
   <!-- svelte-ignore a11y-missing-attribute -->
-  <a class="poppins text-xl text-black">Maverick White Reading May 2023 Beta</a>
+  <a class="poppins text-xl text-black">Maverick White Reading June 2023 Beta</a>
   </div> 
   <div class="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
    

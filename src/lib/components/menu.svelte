@@ -6,18 +6,22 @@
   var isSetup
   var isSignin
   var isSignup
+  var isBookbuy
   $: isBook = $page.url.pathname.indexOf('book/')>0
+  $: isLibrary = $page.url.pathname.indexOf('library/')>0
   $: isAudiobook = $page.url.pathname.indexOf('audiobook/')>0
   $: isAbout = $page.url.pathname == '/'
   $: isSignin = $page.url.pathname == '/signin'
-  $: isLibrary = $page.url.pathname == '/library'
+  $: isBookbuy = $page.url.pathname.indexOf('bookbuy/')>0
   $: isSignup = $page.url.pathname == '/setup/signup'
+  $: isProfile = $page.url.pathname == '/profile'
+  $: isSchools = $page.url.pathname == '/schools'
   $: isSetup = $page.url.pathname.indexOf('setup/')>0
 
   import { onMount } from 'svelte';
   import { Howl } from 'howler';
 
-  import supabase from '$lib/supabase.js'
+  // import supabase from '$lib/supabase.js'
 
   let intervalId;
   let minutes = 0;
@@ -29,6 +33,7 @@
   let sound;
 
   const playSound = () => {
+    console.log('playsound')
     sound = new Howl({
       src: '/mixkit-classic-alarm-995.wav',
     });
@@ -40,6 +45,7 @@
   };
 
   const startStopwatch = () => {
+    // console.log('startStopwatch')
     isRunning = true;
     startTime = Date.now() - elapsedTime;
     intervalId = setInterval(() => {
@@ -97,41 +103,55 @@
     window.scrollTo(0, scrollPosition);
   }
 </script>
-
- 
-
- 
        
 
 <!-- toolbar layout  -->
-<div class="fixed inset-x-0 top-0 z-50 bg-white">
+<div class="fixed inset-x-0 top-0 z-50 bg-white py-1">
   <div class="container mx-auto px-5 py-2">
     <nav class="flex justify-between overflow-x-auto">
 
   
 
  
-  {#if !isLibrary & !isAbout & !isSetup & !isSignin}   <!-- back to library  -->
+  {#if !isLibrary & !isAbout & !isSetup & !isSignin & !isBookbuy & !isSchools}   <!-- back to library  -->
   <div class="flex items-center">
     <!-- svelte-ignore a11y-label-has-associated-control -->
        <!-- svelte-ignore a11y-no-noninteractive-tabindex -->
        <div tabindex="0" class="btn btn-ghost btn-circle">
-        <a href="/library"><img src="/back.png" alt="back button" class="h-6 w-6"/></a>
+        <a href="/library/purchased"><img src="/back.png" alt="back button" class="h-6 w-6"/></a>
   </div></div>
   {/if}
 
-  {#if isSignup}   <!-- back to library  -->
+  {#if isBookbuy & !isSchools}   <!-- back to library  -->
+  <div class="flex items-center">
+    <!-- svelte-ignore a11y-label-has-associated-control -->
+       <!-- svelte-ignore a11y-no-noninteractive-tabindex -->
+       <div tabindex="0" class="btn btn-ghost btn-circle">
+        <a href="/library/available"><img src="/back.png" alt="back button" class="h-6 w-6"/></a>
+  </div></div>
+  {/if}
+
+  {#if isSignup & isSignin}   <!-- back to library  -->
   <div class="flex items-center">
     <!-- svelte-ignore a11y-label-has-associated-control -->
        <!-- svelte-ignore a11y-no-noninteractive-tabindex -->
        <div tabindex="0" class="btn btn-ghost btn-circle">
         <a href="/"><img src="/back.png" alt="back button" class="h-6 w-6"/></a>
-  </div></div>
+   </div></div>
+  {/if}
+
+  {#if isSchools}   <!-- back to library  -->
+  <div class="flex items-center">
+    <!-- svelte-ignore a11y-label-has-associated-control -->
+       <!-- svelte-ignore a11y-no-noninteractive-tabindex -->
+       <div tabindex="0" class="btn btn-ghost btn-circle">
+        <a href="/"><img src="/back.png" alt="back button" class="h-6 w-6"/></a>
+   </div></div>
   {/if}
 
   {#if !isBook}  <!-- title, does not show up in books  -->
     <!-- svelte-ignore a11y-missing-attribute -->
-    <a class="text-2xl pb-1 poppins pt-2 mx-auto">
+    <a class="text-xl pb-1 poppins pt-3 mx-auto">
       Maverick White Reading Software
     </a>
   {/if}
@@ -146,7 +166,9 @@
         <a class="poppins text-xl pr-4">Stopwatch:</a>
         <button
           class="bg-gray-100 text-black font-bold rounded-full poppins py-2 px-4 rounded timer-button"
-          on:click={() => { if (!isRunning) startStopwatch(); else pauseStopwatch(); }}
+          on:click={() => {
+            if (!isRunning) startStopwatch(); else pauseStopwatch(); 
+          }}
         >
           {!isRunning ? 'Start' : 'Pause'}
         </button>
@@ -178,9 +200,9 @@
 {/if}
       
    
-{#if !isAbout & !isBook & !isSetup & !isSignin}   <!-- profile icon -->
+{#if !isAbout & !isBook & !isSetup & !isSignin & !isSchools}   <!-- profile icon -->
   <div  class="avatar w-12 btn btn-ghost btn-circle">
-    <a href="/profile"><img src="/profile.png" alt="profile" class="rounded-full"/></a>
+    <a href="/profile" class="h-11 w-11"><img src="/profile.png" alt="profile" class="rounded-full"/></a>
   </div>
 {/if}  
 

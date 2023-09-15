@@ -77,6 +77,8 @@ Chapter 26: Mendocino Coast Trail Hike
 
 Chapter 27: Hawaii Border Boating
 
+### Warning: Pickles and Jeremiah are smarter in this book
+
 # Introduction 
 
 ### Meet Pickles and Jeremiah, Two Adventurous Crickets

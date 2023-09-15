@@ -47,6 +47,8 @@ Chapter 11: Nighttime Skydiving
 
 Chapter 12: Lost in Translation - A Third Mishap
 
+### Warning: Pickles and Jeremiah are smarter in this book
+
 # Introduction
 
 ### Meet Pickles and Jeremiah, two adventurous crickets

@@ -94,14 +94,13 @@ $:name = '';
     <div class="pt-2">
       <ul class="steps">
       <li class="step step-primary poppins">Register</li>
-      <li class="step step-primary poppins">Choose Plan</li>
       <li class="step step-primary poppins" data-content="?">Profile</li>
       <li class="step poppins" data-content="?">Done!</li>
     </ul>
     </div>
 </center>
     <!-- svelte-ignore a11y-missing-attribute -->
-    <!-- <html>
+   <html>
         <head>
           <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
           <style>
@@ -109,7 +108,8 @@ $:name = '';
               border-color: transparent;
             }
           </style>
-        </head> -->
+        </head>
+        </html>
         <!-- <body class="flex flex-col items-center justify-start h-auto pt-10"> -->
           <center class="pt-4 pb-6">
             <!-- svelte-ignore a11y-missing-attribute -->

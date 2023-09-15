@@ -14,7 +14,6 @@
     <div>
       <ul class="steps">
         <li class="step step-primary poppins" data-content="?">Register</li>
-        <li class="step poppins" data-content="?">Choose Plan</li>
         <li class="step poppins" data-content="?">Profile</li>
         <li class="step poppins" data-content="?">Done!</li>
       </ul>
@@ -55,7 +54,7 @@
         </div>
         <div class="mb-4">
           <!-- svelte-ignore a11y-missing-attribute -->
-<a class="w-full btn btn-outline poppins py-2 px-4 rounded-full" href="/setup/pricing">Sign Up</a>
+<a class="w-full btn btn-outline poppins py-2 px-4 rounded-full" href="/setup/profile">Sign Up</a>
 </div>
 </form>
 </div>

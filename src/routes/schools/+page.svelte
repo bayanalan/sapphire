@@ -1,0 +1,7 @@
+<p class="text-5xl pt-5 text-center">Maverick White for Schools (Starts August 1, 2024)</p>
+<p class="text-xl pt-10 text-center pl-12 pr-12">
+  Introducing Maverick White for Schools, an innovative online reading software that not only revolutionizes the way students engage with literature but also offers a generous financial incentive to support their educational journey. With Maverick White for Schools, the school's owner receives $500 specifically designated for purchasing books solely for the students' benefit. This exclusive funding ensures that the money is dedicated entirely to enhancing the students' literary experiences, fostering a love for reading, and expanding their knowledge. This user-friendly software provides access to an extensive digital library, allowing students to explore a wide range of captivating books. Educators can effortlessly promote literacy while using the allocated funds to curate a diverse and enriching collection of books, catering to the unique interests and learning needs of their students. It's time to embrace Maverick White for Schools, empowering schools to invest in the growth and development of their students' literary skills, one book at a time.
+</p>
+<center class="pt-12">
+<a class="btn btn-outline rounded-full" href="mailto:maverickwhiteschools@gmail.com">Join the Waiting list</a>
+</center>

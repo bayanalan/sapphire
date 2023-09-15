@@ -1,21 +1,21 @@
+// tailwind.config.cjs
+
 const config = {
   content: ["./src/**/*.{html,js,svelte,ts}"],
 
   theme: {
-    extend: {},
+    extend: {
+      width: {
+        '128': '50em',
+      },
+    },
   },
 
-  
   plugins: [
-    require('@tailwindcss/typography'),
-    require('tailwind-scrollbar-hide'),
     require("daisyui"),
+    require('tailwind-scrollbar-hide'),
+    require('@tailwindcss/typography')
   ],
-
-
 };
 
 module.exports = config;
-
- 
-

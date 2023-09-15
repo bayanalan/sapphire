@@ -5,7 +5,7 @@
   //import Screenwidth from "$lib/components/screenwidth.svelte"
 </script>
 
-<div class="max-w-screen mx-auto overflow-hidden"> 
+<div class="max-w-screen mx-auto overflow-hidden poppins"> 
   <Menu/>
   <div class="h-20"> &nbsp; </div>
    <slot/>
