@@ -54,7 +54,27 @@
         </div>
         <div class="mb-4">
           <!-- svelte-ignore a11y-missing-attribute -->
-<a class="w-full btn btn-outline poppins py-2 px-4 rounded-full" href="/setup/profile">Sign Up</a>
+<script>
+import { auth } from '../../auth.js';
+
+let email = '';
+let password = '';
+let passwordConfirm = '';
+
+async function signUp() {
+  if (password !== passwordConfirm) {
+    alert('Passwords do not match');
+    return;
+  }
+
+  const { error } = await auth.signUp({ email, password });
+  if (!error) {
+    window.location.href = '/library/available';
+  }
+}
+</script>
+
+<a class="w-full btn btn-outline poppins py-2 px-4 rounded-full" on:click={signUp}>Sign Up</a>
 </div>
 </form>
 </div>
