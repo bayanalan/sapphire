@@ -3,8 +3,8 @@
     <div class="hero-content text-center">
      <img width="500" class="mx-auto" src="favicon.png" alt="Maverick white logo" />
       <div class="w-full">
-       <h1 class="poppins text-6xl pl-7 pb-6 font-bold">Welcome to Maverick Black Reading Software</h1>
-        <p class="poppins py-6 pb-8 pl-7 text-3xl">Welcome to Maverick Black Reading Software, the ultimate destination for book lovers and avid readers everywhere. Whether you're a casual reader or an avid bibliophile, this software has something for everyone. </p>
+       <h1 class="poppins text-6xl pl-7 pb-6 font-bold">Welcome to Maverick White Reading Software</h1>
+        <p class="poppins py-6 pb-8 pl-7 text-3xl">Welcome to Maverick White Reading Software, the ultimate destination for book lovers and avid readers everywhere. Whether you're a casual reader or an avid bibliophile, this software has something for everyone. </p>
        <div>
         <a class="btn rounded-full btn-outline text-base poppins" href="/setup/signup">Register Now!</a>
       </div>
