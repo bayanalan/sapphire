@@ -39,7 +39,21 @@
         </div>
         <div class="mb-4">
           <!-- svelte-ignore a11y-missing-attribute -->
-          <a class="w-full btn btn-outline poppins py-2 px-4 rounded-full" href="/library/available">Sign In</a>
+          <script>
+          import { auth } from '../../auth.js';
+
+          let email = '';
+          let password = '';
+
+          async function signIn() {
+            const { error } = await auth.signIn({ email, password });
+            if (!error) {
+              window.location.href = '/library/available';
+            }
+          }
+          </script>
+
+          <a class="w-full btn btn-outline poppins py-2 px-4 rounded-full" on:click={signIn}>Sign In</a>
       </div>
       </form>
     </div>

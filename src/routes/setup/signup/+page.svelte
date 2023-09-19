@@ -67,9 +67,11 @@ async function signUp() {
     return;
   }
 
-  const { error } = await auth.signUp({ email, password });
-  if (!error) {
-    window.location.href = '/library/available';
+  const { user, error } = await auth.signUp({ email, password });
+  if (user) {
+    window.location.href = '/setup/profile';
+  } else if (error) {
+    console.error(error);
   }
 }
 </script>
