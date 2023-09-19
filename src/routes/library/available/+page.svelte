@@ -1,3 +1,11 @@
+<script>
+import { auth } from '../../auth.js';
+
+if (!auth.isAuthenticated()) {
+  window.location.href = '/';
+}
+</script>
+
 <center>
   <div class="mt-4 w-56">
     <div class="tabs">
