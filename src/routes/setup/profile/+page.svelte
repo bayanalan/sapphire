@@ -45,29 +45,27 @@ import { getStorage, ref, uploadBytes, getDownloadURL } from 'firebase/storage';
 
   function displayFirstLetters() {
     // Get the input value
-    let inputValue, outputElement, ringContainer;
-    if (typeof document !== "undefined") {
-      inputValue = document.getElementById('daisyInput').value.trim();
-      outputElement = document.getElementById('output');
-      ringContainer = document.querySelector('.ring-container');
-    }
+    let inputValue = document.getElementById('daisyInput').value.trim();
+    const ringElement = document.querySelector('.ring-container');
 
-    // If the input is empty, set the output to an empty string and hide the ring
+    // If the input is empty, hide the ring
     if (inputValue === '') {
-      outputElement.innerText = '';
-      ringContainer.classList.add('hidden-ring');
+      ringElement.style.display = 'none';
       return;
     }
 
-    // Split the input value into words
-    const words = inputValue.split(' ');
+    // Split the input value into words and capitalize the first letter of each word
+    const firstLetters = inputValue.split(' ')
+                                   .map(word => word.charAt(0).toUpperCase())
+                                   .join('');
 
-    // Extract the first letter of each word and convert to uppercase
-    const firstLetters = words.map(word => word.charAt(0).toUpperCase()).join('');
-
-    // Display the result in the output element and show the ring
-    outputElement.innerText = firstLetters;
-    ringContainer.classList.remove('hidden-ring');
+    // Set the first letters as the text content of the ring element
+    ringElement.textContent = firstLetters;
+    ringElement.style.display = 'flex';
+    ringElement.style.justifyContent = 'center';
+    ringElement.style.alignItems = 'center';
+    ringElement.style.fontSize = '2rem'; // Adjust font size as needed
+    ringElement.style.color = 'black'; // Adjust text color as needed
   }
 
   // Listen for the "Enter" key press in the input field
