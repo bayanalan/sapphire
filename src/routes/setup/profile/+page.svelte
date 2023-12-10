@@ -138,6 +138,54 @@ function useGeneratedName() {
 
                     <!-- Random Name Generator -->
 
+<!-- Profile Picture Section -->
+<center class="pt-12">
+  <img src="/default-profile.png" alt="Profile Picture" id="profilePic" class="rounded-full h-24 w-24 object-cover">
+  <input type="file" id="fileUpload" class="hidden" accept="image/png, image/jpeg" on:change={uploadProfilePicture} />
+  <button class="btn btn-outline rounded-full btn-sm poppins mt-2" on:click={() => document.getElementById('fileUpload').click()}>Upload Picture</button>
+</center>
+
+<script>
+  // Import the necessary Firebase modules
+  import { getStorage, ref, uploadBytes, getDownloadURL } from 'firebase/storage';
+  import { user } from '$lib/stores'; // Assuming you have a user store
+
+  // Function to handle profile picture upload
+  async function uploadProfilePicture(event) {
+    const file = event.target.files[0];
+    if (!file) return;
+
+    // Create a reference to the file in Firebase Storage
+    const storage = getStorage();
+    const storageRef = ref(storage, 'profile-pictures/' + user.uid + '.png');
+
+    try {
+      // Upload the file to Firebase Storage
+      const snapshot = await uploadBytes(storageRef, file);
+
+      // Get the URL of the uploaded file
+      const photoURL = await getDownloadURL(snapshot.ref);
+
+      // Update the user's profile picture
+      // You will need to implement updateUserProfilePic to update the user's profile in your database
+      await updateUserProfilePic(user.uid, photoURL);
+
+      // Update the profile picture on the page
+      document.getElementById('profilePic').src = photoURL;
+    } catch (error) {
+      console.error('Error uploading file:', error);
+    }
+  }
+
+  // Function to update the user's profile picture URL in your database
+  async function updateUserProfilePic(userId, photoURL) {
+    // Implement the logic to update the user's profile picture URL in your database
+    // This could involve updating a user document in Firestore or another database service
+  }
+</script>
+
+<!-- Random Name Generator -->
+
 <center class="pt-16">
   <!-- svelte-ignore a11y-missing-attribute -->
   <a class="poppins text-3xl">Need Ideas? Ask our Name Generator!</a>
