@@ -10,7 +10,7 @@ import { getStorage, ref, uploadBytes, getDownloadURL } from 'firebase/storage';
 
     // Create a reference to the file in Firebase Storage
     const storage = getStorage();
-    const storageRef = ref(storage, 'profile-pictures/' + user.uid + '.png');
+    const storageRef = ref(storage, 'profile-pictures/' + $user.uid + '.png');
 
     try {
       // Upload the file to Firebase Storage
