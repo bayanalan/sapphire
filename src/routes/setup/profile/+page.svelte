@@ -23,18 +23,10 @@ import { getStorage, ref, uploadBytes, getDownloadURL } from 'firebase/storage';
       // You will need to implement updateUserProfilePic to update the user's profile in your database
       await updateUserProfilePic(user.uid, photoURL);
 
-      // Update the profile picture in the user store and set it as the background of the ring
+      // Update the profile picture in the user store
       user.update(currentUser => ({ ...currentUser, profilePic: photoURL }));
-      const ringElement = document.querySelector('.ring-container');
-      if (ringElement) {
-        ringElement.style.backgroundImage = `url(${photoURL})`;
-        ringElement.style.backgroundSize = 'cover';
-        ringElement.style.backgroundPosition = 'center';
-        ringElement.style.backgroundRepeat = 'no-repeat';
-        ringElement.style.width = '100%';
-        ringElement.style.height = '100%';
-        ringElement.style.borderRadius = '50%';
-      }
+      // Save the profile picture URL in Firebase
+      await updateUserProfilePic($user.uid, photoURL);
     } catch (error) {
       console.error('Error uploading file:', error);
     }
