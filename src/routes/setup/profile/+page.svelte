@@ -154,57 +154,16 @@ function useGeneratedName() {
             <!-- svelte-ignore a11y-missing-attribute -->
             <a class="poppins text-base">Name:</a>
            </center>
-           <div class="flex flex-col items-center justify-center pt-2">
-            <p class="poppins badge badge-outline text-2xl p-4" id="generatedName">{name}</p>
-            <button on:click={useGeneratedName} class="btn btn-outline rounded-full btn-sm poppins mt-2">Use Name</button>
-           </div>
+           <center class="pt-2">
+            <div class="mb-2"><p class="poppins badge badge-outline text-2xl p-4" id="generatedName">{name}</p></div>
+            <button on:click={useGeneratedName} class="btn btn-outline rounded-full btn-sm poppins ml-1">Use Name</button>
+           </center>
            <center class="pt-4 pr-4 pl-4">
             <!-- svelte-ignore a11y-missing-attribute -->
             <a class="poppins text-lg">
-              If you are content with the suggested name, you can easily transfer it to the Name Form by copying and pasting it into the form. If you don't like it, click "Generate Name" again for a new one. Instructions for copying and pasting are provided.</a>
+              If you are content with the suggested name, you can easily transfer it to the Name Form by clicking on the "Use Name" button. If you don't like it, click "Generate Name" again for a new one.</a>
            </center>
 
-           <!-- copy -->
-           <div class="p-12 px-96">
-            <div class="border-2 rounded-2xl border-black">
- <center class="pt-6">
-            <!-- svelte-ignore a11y-missing-attribute -->
-            <a class="text-2xl poppins">Copy:</a>
- </center>
- <center class="mx-auto pt-6">
-            <kbd class="kbd poppins">ctrl</kbd>
-               +
-               <kbd class="kbd poppins">c</kbd> <a class="poppins">on Windows and Linux</a>
- </center>
- 
- <center class="mx-auto pt-6 pb-6">
-   <kbd class="kbd poppins">⌘</kbd>
-      +
-      <kbd class="kbd poppins">c</kbd> <a class="poppins">on Mac</a>
- </center>
-           </div>
- </div>
-
- <!-- paste -->
- <div class="pb-6 px-96">
-  <div class="border-2 rounded-2xl border-black">
-<center class="pt-6">
-  <!-- svelte-ignore a11y-missing-attribute -->
-  <a class="text-2xl poppins">Paste:</a>
-</center>
-<center class="mx-auto pt-6">
-  <kbd class="kbd poppins">ctrl</kbd>
-     +
-     <kbd class="kbd poppins">v</kbd> <a class="poppins">on Windows and Linux</a>
-</center>
-
-<center class="mx-auto pt-6 pb-6">
-<kbd class="kbd poppins">⌘</kbd>
-+
-<kbd class="kbd poppins">v</kbd> <a class="poppins">on Mac</a>
-</center>
- </div>
-</div>
           {/if}        
                 
           <center class="mx-auto pt-36">
