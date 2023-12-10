@@ -78,7 +78,8 @@ typings/
 
 # dotenv environment variables file
 >>>>>>> c3df110d9127db1b0c2a5c72635539399679defd
-.env
+# .env files should not be committed to your repository
+# Instead, use .env.example with dummy values for reference
 .env.*
 !.env.example
 .aider*
