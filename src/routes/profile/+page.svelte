@@ -6,7 +6,9 @@
   import { user } from '$lib/stores'; // Import the user store
 </script>
 
-<center class="pb-5 pt-10"><img width="225" class="rounded-full" src="{user.profilePic || '/default-profile.png'}" alt="profile image"></center>
+<center class="pb-5 pt-10">
+  <div class="ring-container" style="background-image: url({$user.profilePic || '/default-profile.png'}); background-size: cover; background-position: center; background-repeat: no-repeat; width: 225px; height: 225px; border-radius: 50%;"></div>
+</center>
 
 <!-- svelte-ignore a11y-missing-attribute -->
 <center><a class="pb-3 text-3xl poppins">Bayan Jones</a></center>
