@@ -1,5 +1,6 @@
 <script>
   import { page } from '$app/stores';
+  import { user } from '$lib/stores'; // Import the user store
   var isBook 
   var isAudiobook
   var isAbout
@@ -202,7 +203,7 @@
    
 {#if !isAbout & !isBook & !isSetup & !isSignin & !isSchools}   <!-- profile icon -->
   <div  class="avatar w-12 btn btn-ghost btn-circle">
-    <a href="/profile" class="h-11 w-11"><img src="{$user.profilePic || '/default-profile.png'}" alt="profile" class="rounded-full"/></a>
+    <a href="/profile" class="h-11 w-11"><img src="{$user.profilePic}" alt="profile" class="rounded-full"/></a>
   </div>
 {/if}  
 
