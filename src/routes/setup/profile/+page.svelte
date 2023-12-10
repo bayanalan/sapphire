@@ -85,8 +85,17 @@ function handleClick() {
   name = generateName();
 }
 
-let name 
-$:name = '';
+let name;
+$: name = '';
+
+function copyToClipboard() {
+  const text = document.getElementById('generatedName').textContent;
+  navigator.clipboard.writeText(text).then(() => {
+    // Optional: Add some user feedback here (e.g., changing the button text to "Copied!" for a short duration)
+  }, (err) => {
+    console.error('Could not copy text: ', err);
+  });
+}
 </script>
 
 
@@ -149,7 +158,8 @@ $:name = '';
             <a class="poppins text-base">Name:</a>
            </center>
            <center class="pt-2">
-            <p class="poppins badge badge-outline text-2xl p-5">{name}</p>
+            <p class="poppins badge badge-outline text-2xl p-5" id="generatedName">{name}</p>
+            <button on:click={copyToClipboard} class="btn btn-outline btn poppins ml-2">Copy</button>
            </center>
            <center class="pt-4 pr-4 pl-4">
             <!-- svelte-ignore a11y-missing-attribute -->
