@@ -152,7 +152,7 @@
   {#if !isBook}  <!-- title, does not show up in books  -->
     <!-- svelte-ignore a11y-missing-attribute -->
     <a class="text-xl pb-1 poppins pt-3 mx-auto">
-      Maverick White Reading Software
+      Maverick White Reading
     </a>
   {/if}
 
