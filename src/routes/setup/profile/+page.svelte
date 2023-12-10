@@ -28,9 +28,12 @@ import { getStorage, ref, uploadBytes, getDownloadURL } from 'firebase/storage';
       const ringElement = document.querySelector('.ring-container');
       if (ringElement) {
         ringElement.style.backgroundImage = `url(${photoURL})`;
-        ringElement.style.backgroundSize = 'cover';
+        ringElement.style.backgroundSize = 'contain';
         ringElement.style.backgroundPosition = 'center';
         ringElement.style.backgroundRepeat = 'no-repeat';
+        ringElement.style.width = '100%';
+        ringElement.style.height = '100%';
+        ringElement.style.borderRadius = '50%';
       }
     } catch (error) {
       console.error('Error uploading file:', error);
