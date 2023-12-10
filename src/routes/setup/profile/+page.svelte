@@ -154,10 +154,10 @@ function useGeneratedName() {
             <!-- svelte-ignore a11y-missing-attribute -->
             <a class="poppins text-base">Name:</a>
            </center>
-           <center class="pt-2">
+           <div class="flex flex-col items-center justify-center pt-2">
             <p class="poppins badge badge-outline text-2xl p-4" id="generatedName">{name}</p>
-            <button on:click={useGeneratedName} class="btn btn-outline rounded-full btn-sm poppins ml-1">Use Name</button>
-           </center>
+            <button on:click={useGeneratedName} class="btn btn-outline rounded-full btn-sm poppins mt-2">Use Name</button>
+           </div>
            <center class="pt-4 pr-4 pl-4">
             <!-- svelte-ignore a11y-missing-attribute -->
             <a class="poppins text-lg">
