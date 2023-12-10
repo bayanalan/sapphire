@@ -2,7 +2,11 @@
 <center class="pt-7"><a class="text-8xl poppins">Profile</a></center>
 
 <!-- svelte-ignore a11y-img-redundant-alt -->
-<center class="pb-5 pt-10"><img width="225" class="rounded-full" src="profile.png" alt="profile image"></center>
+<script>
+  import { user } from '$lib/stores'; // Import the user store
+</script>
+
+<center class="pb-5 pt-10"><img width="225" class="rounded-full" src="{user.profilePic || '/default-profile.png'}" alt="profile image"></center>
 
 <!-- svelte-ignore a11y-missing-attribute -->
 <center><a class="pb-3 text-3xl poppins">Bayan Jones</a></center>

@@ -202,7 +202,7 @@
    
 {#if !isAbout & !isBook & !isSetup & !isSignin & !isSchools}   <!-- profile icon -->
   <div  class="avatar w-12 btn btn-ghost btn-circle">
-    <a href="/profile" class="h-11 w-11"><img src="/profile.png" alt="profile" class="rounded-full"/></a>
+    <a href="/profile" class="h-11 w-11"><img src="{user.profilePic || '/default-profile.png'}" alt="profile" class="rounded-full"/></a>
   </div>
 {/if}  
 
