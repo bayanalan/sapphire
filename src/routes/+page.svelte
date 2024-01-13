@@ -3,8 +3,8 @@
     <div class="hero-content text-center">
      <img width="500" class="mx-auto" src="favicon.png" alt="Maverick white logo" />
       <div class="w-full">
-       <h1 class="poppins text-6xl pl-7 pb-6 font-bold">Welcome to Maverick White Reading Software</h1>
-        <p class="poppins py-6 pb-8 pl-7 text-3xl">Welcome to Maverick White Reading Software, the ultimate destination for book lovers and avid readers everywhere. Whether you're a casual reader or an avid bibliophile, this software has something for everyone. </p>
+       <h1 class="poppins text-6xl pl-7 pb-6 font-bold">Welcome to Maverick White Reading</h1>
+        <p class="poppins py-6 pb-8 pl-7 text-3xl">Welcome to Maverick White Reading, the ultimate destination for book lovers and avid readers everywhere. Whether you're a casual reader or an avid bibliophile, this software has something for everyone. </p>
        <div>
         <a class="btn rounded-full btn-outline text-base poppins" href="/setup/signup">Register Now!</a>
       </div>
@@ -22,7 +22,7 @@
     <img src="/OIP.png" class="rounded-lg shadow-2xl" alt="Books" width="570"/>
     <div>
       <h1 class="text-5xl pt-6 font-bold poppins">An Entire Library of Books, On One Device</h1>
-      <p class="py-6 text-2xl pb-6 poppins">Maverick White Reading Software is the perfect solution for those who love to read but don't always have the time or convenience to visit a physical library. With this software, you can have access to an entire library of books at your fingertips, all in one place.
+      <p class="py-6 text-2xl pb-6 poppins">Maverick White Reading is the perfect solution for those who love to read but don't always have the time or convenience to visit a physical library. With this software, you can have access to an entire library of books at your fingertips, all in one place.
         <br>
 <br>
         With a vast library of books, including titles like Pickles And Jeremiah, Abalone in Heaven, and many more, you're sure to find something that you'll love. Whether you're in the mood for a mystery, a romance, or something completely different, you'll find it here.
@@ -54,7 +54,7 @@
           <img src="/money.png" class="rounded-box" width="200"/>
       <div>
         <h1 class="text-5xl pt-6 pl-10 font-bold poppins">Super Affordable</h1>
-        <p class="py-6 pl-10 poppins text-2xl">And the best part? Maverick White Reading Software offers books for only $1.99 each! That's a fraction of the cost compared to our competitors. We believe that reading should be affordable and accessible to everyone. Also note that there are 3 free books included!</p>
+        <p class="py-6 pl-10 poppins text-2xl">And the best part? Maverick White Reading offers books for only $1.99 each! That's a fraction of the cost compared to our competitors. We believe that reading should be affordable and accessible to everyone. Also note that there are 3 free books included!</p>
 </div>
     </div>
   </div>
@@ -71,10 +71,10 @@ With this technology, you can easily follow the flow of the story and grasp the 
       <img src="/signup.png" width="400" class="rounded-lg" />
       <div>
         <h1 class="text-5xl pt-6 pl-10 poppins font-bold">Sign Up Today!</h1>
-        <p class="py-6 pl-10 poppins text-2xl">With the Maverick White Reading Software, whether you're at home, at work, or on the go, you'll have access to your favorite books whenever you want.
+        <p class="py-6 pl-10 poppins text-2xl">With Maverick White Reading, whether you're at home, at work, or on the go, you'll have access to your favorite books whenever you want.
           <br>
   <br>
-        Start reading today with Maverick White Reading Software. With so many books at your fingertips, you'll never run out of things to read. Don't wait, sign up now and start your reading journey today!
+        Start reading today with Maverick White Reading. With so many books at your fingertips, you'll never run out of things to read. Don't wait, sign up now and start your reading journey today!
         </p>
       
         <div class="pl-10 pb-6">

@@ -76,7 +76,10 @@ async function signUp() {
 }
 </script>
 
-<a class="w-full btn btn-outline poppins py-2 px-4 rounded-full" on:click={signUp}>Sign Up</a>
+<!-- svelte-ignore missing-declaration -->
+<!-- svelte-ignore a11y-click-events-have-key-events -->
+<!-- svelte-ignore a11y-missing-attribute -->
+<a class="w-full btn btn-outline poppins py-2 px-4 rounded-full" on:click={signUp} href="/setup/profile">Sign Up</a>
 </div>
 </form>
 </div>

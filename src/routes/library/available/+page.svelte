@@ -1,9 +1,9 @@
 <script>
-import { auth } from '../../auth.js';
+// import { auth } from '../../auth.js';
 
-if (!auth.isAuthenticated()) {
-  window.location.href = '/';
-}
+// if (!auth.isAuthenticated()) {
+//   window.location.href = '/';
+// }
 </script>
 
 <center>
